@@ -5,7 +5,7 @@ Real Library of Congress page scans, editable discovery topics, arbitrary live
 full-text queries, random page discovery and a downloadable source trail.
 
 <!-- coolcode:guide -->
-Choose a topic or search your own phrase, then open the original page to check the OCR and surrounding columns. Topic matches are historical reports, not verified events; save useful pages and export their source links.
+Choose a topic or search your own phrase, then open the original page to check the OCR and surrounding columns. Topic matches are historical reports, not verified events; save useful pages and export their source links. If a live request fails, import an official Library JSON response with its exact search URL; clippings stay usable and imports are clearly dated as imports.
 <!-- /coolcode:guide -->
 
 ## Use it
@@ -92,9 +92,36 @@ is the loc.gov JSON API; the legacy API was retired in 2025.
 [Current API limits](https://www.loc.gov/apis/json-and-yaml/working-within-limits/)
 state 20 JSON requests per minute; the app submits only explicit searches with
 at least four seconds between starts and no automatic retry storm. API requests
-can be slow or blocked during heavy load. A failed live request preserves the
-previous shelf and supplies the equivalent provider search link. The observed
-API response supports cross-origin browser requests.
+can be slow or blocked during heavy load. The Library explicitly warns that even
+requests below its limit may receive HTTP 429 or HTML verification pages. Browser
+cross-site access and network failures can also hide the underlying response;
+“Failed to fetch” alone cannot distinguish them. A successful test in one browser
+does not guarantee access from every visitor's browser. The app never retries
+failures automatically and preserves previous results and clippings.
+
+Live requests use the documented `at=results,pagination` projection to avoid
+unneeded response fields. This reduces payload size; it does not remove upstream
+access controls or guarantee a faster search.
+
+### Recover a search using an official JSON file
+
+1. Set your query, then expand **Import Library of Congress results**. Its JSON
+   link follows the attempted query and page, including a failed next-page request.
+2. Open **Open this search as Library JSON** in a normal tab. If JSON appears,
+   save it as a `.json` file. If the provider returns verification or an error,
+   an HTML save is not usable JSON; use the provider's own interface as permitted.
+3. Click **Use the linked search URL**, or paste the exact source URL of an
+   already-saved response. The URL is explicit so a file is not silently associated
+   with whichever form happens to be open.
+4. Choose the JSON file. The app validates the collection, query, dates, page,
+   count, available pagination metadata and source links before replacing results.
+   Existing clippings stay intact. Choose **Save this page** to retain and export
+   imported pages just like live results.
+
+File reads are local. Imported pages carry `mode: imported`, their exact
+`sourceUrl`, `importedAt`, date range and page information in each clipping's
+research context. The upstream retrieval time is unknown (`retrievedAt: null`),
+not the import time. Imports do not automatically continue network pagination.
 
 [Rights and access](https://www.loc.gov/collections/chronicling-america/about-this-collection/rights-and-access/):
 the Library believes the collection is in the public domain or has no known
