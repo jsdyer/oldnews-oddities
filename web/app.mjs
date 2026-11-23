@@ -1,37 +1,27 @@
-import { cleanLines } from './model.mjs';
-const input = document.querySelector('#input');
-const output = document.querySelector('#output');
-const status = document.querySelector('#status');
-const copy = document.querySelector('#copy');
-function update() {
-  const result = cleanLines(input.value);
-  output.value = result.text;
-  status.textContent = `${result.count} unique ${result.count === 1 ? 'line' : 'lines'}; ${result.removed} ${result.removed === 1 ? 'duplicate' : 'duplicates'} removed.`;
-  copy.disabled = result.count === 0;
-}
-input.addEventListener('input', update);
-document.querySelector('#sample').addEventListener('click', () => {
-  input.value = '  Halifax\nLangley\nHalifax\n\nVancouver  ';
-  update();
-});
-document.querySelector('#clear').addEventListener('click', () => {
-  input.value = '';
-  update();
-  input.focus();
-});
-if (navigator.clipboard && window.isSecureContext) {
-  copy.hidden = false;
-  copy.disabled = true;
-  copy.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(output.value);
-      status.textContent = 'Result copied.';
-    } catch {
-      output.focus();
-      output.select();
-      status.textContent = 'Copy was unavailable. The result is selected so you can copy it manually.';
-    }
-  });
-}
-// Namespace future preference storage as coolcode:<tool-id>:<key>.
-// Do not persist pasted text or uploads by default.
+import {searchSpec,searchUrl,normalizeResponse,textUrl,matchedExcerpt,filterRecords,csv,receipt} from './model.mjs';
+const $=id=>document.getElementById(id);
+let config,shelf,current={total:0,query:''},records=[],page=1,live=false,lastRequest=0,requestPending=false;
+const saved=new Map();
+const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+function link(text,href){const a=el('a',text);a.href=href;a.target='_blank';a.rel='noopener';return a;}
+function dateText(date){return new Date(date+'T12:00:00Z').toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});}
+function status(text){$('status').textContent=text;}
+function imageNode(record){const box=el('div',undefined,'image-wrap');if(record.image){const img=el('img');img.src=record.image;img.alt=`Newspaper page: ${record.title}`;img.loading='lazy';img.referrerPolicy='no-referrer';img.addEventListener('error',()=>{img.remove();box.append(el('span','Page image unavailable. Open the source scan.','no-image'));},{once:true});box.append(img);}else box.append(el('span','Open the original to view this page.','no-image'));return box;}
+function card(record){const article=el('article',undefined,'record');article.append(imageNode(record));const body=el('div',undefined,'record-body');const time=el('time',dateText(record.date));time.dateTime=record.date;body.append(time,el('h3',record.title),el('p',[record.city,record.state].filter(Boolean).join(', ')||'Place not recorded','place'));
+  const excerpt=matchedExcerpt(record,current.query);if(excerpt){body.append(el('p',excerpt,'excerpt'),el('span','OCR excerpt · check against the scan','fine'));}
+  const links=el('div',undefined,'links');links.append(link('Read the page',record.url),link('View OCR text',textUrl(record.url)));body.append(links);const save=el('button',saved.has(record.id)?'Saved to clippings':'Save this page','save');save.type='button';save.setAttribute('aria-pressed',String(saved.has(record.id)));save.addEventListener('click',()=>{saved.has(record.id)?saved.delete(record.id):saved.set(record.id,{...record,researchContext:{query:current.query,operator:current.operator,fromYear:current.fromYear,toYear:current.toYear,mode:current.mode,sourceUrl:current.sourceUrl,retrievedAt:current.retrievedAt||current.capturedAt}});renderClips();render();});body.append(save);article.append(body);return article;}
+function render(){const shown=filterRecords(records,$('filter').value);$('results').replaceChildren(...shown.map(card));if(!shown.length)$('results').append(el('p',records.length?'No pages match this filter. Try fewer words.':'The source returned no matching pages for this search. Try a different phrase or date range.'));$('count').textContent=`${shown.length} of ${records.length} loaded pages · ${Number(current.total).toLocaleString()} matches reported by the source`; $('shuffle').disabled=!records.length;$('more').hidden=!live||records.length>=current.total;$('more').disabled=requestPending;}
+function renderClips(){const clips=[...saved.values()];$('clipCount').textContent=clips.length?`${clips.length} ${clips.length===1?'page':'pages'} saved in this tab.`:'No pages saved in this tab.';for(const id of ['exportJSON','exportCSV','clearClips'])$(id).disabled=!clips.length;$('clips').replaceChildren(...clips.map(r=>{const row=el('div',undefined,'clip');row.append(link(`${r.date} · ${r.title}`,r.url));const b=el('button','Remove','text-button');b.addEventListener('click',()=>{saved.delete(r.id);renderClips();render();});row.append(b);return row;}));}
+function chooseTopic(id){const topic=config.topics.find(t=>t.id===id);const capture=shelf.topics.find(t=>t.id===id);live=false;page=1;$('filter').value='';$('spotlight').hidden=true;$('query').value=topic.query;$('operator').value=topic.operator;$('fromYear').value=topic.fromYear??config.defaultFromYear;$('toYear').value=topic.toYear??config.defaultToYear;current={...topic,...capture,total:capture?.total??0,mode:'retained',capturedAt:shelf.capturedAt};records=capture?.records||[];$('topicDescription').textContent=topic.description;$('shelfTitle').textContent=topic.label;for(const b of $('topics').children)b.setAttribute('aria-pressed',String(b.dataset.id===id));updateProviderLink();status(`Retained search shelf · ${records.length} pages for “${topic.query}”. Open the source to read the complete report.`);render();}
+function updateProviderLink(){try{$('providerSearch').href=searchUrl(searchSpec($('query').value,$('operator').value,$('fromYear').value,$('toYear').value),config.pageSize,1,false);}catch{$('providerSearch').href='https://www.loc.gov/collections/chronicling-america/';}}
+function busy(value){requestPending=value;$('searchSubmit').disabled=value;$('searchSubmit').textContent=value?'Searching the archive…':'Search newspaper pages';$('more').disabled=value;for(const b of $('topics').children)b.disabled=value;}
+async function search(nextPage=false){if(requestPending)return;let spec;try{spec=nextPage?current:searchSpec($('query').value,$('operator').value,$('fromYear').value,$('toYear').value);}catch(e){status(e.message);return;}
+  const interval=Math.max(4,config.minimumRequestIntervalSeconds||4)*1000;if(Date.now()-lastRequest<interval){status('Please leave a few seconds between searches to respect the library’s API limit.');return;}
+  const next=nextPage?page+1:1;if((next-1)*config.pageSize>=100000){status('The Library of Congress limits deep paging to 100,000 matches. Narrow the phrase or date range to continue.');return;}const url=searchUrl(spec,config.pageSize,next);busy(true);lastRequest=Date.now();status(`Searching the Library of Congress. This can take up to ${config.requestTimeoutSeconds||90} seconds; your current shelf remains below.`);
+  try{const response=await fetch(url,{credentials:'omit',referrerPolicy:'no-referrer',signal:AbortSignal.timeout((config.requestTimeoutSeconds||90)*1000)});if(!response.ok)throw new Error(`The library returned HTTP ${response.status}.`);const data=normalizeResponse(await response.json());const known=new Map((nextPage?records:[]).map(r=>[r.id,r]));for(const r of data.records)known.set(r.id,r);records=[...known.values()];page=next;live=true;current={...spec,total:data.total,mode:'live',retrievedAt:new Date().toISOString(),sourceUrl:url};$('filter').value='';$('spotlight').hidden=true;$('shelfTitle').textContent=`Your search: ${spec.query}`;$('topicDescription').textContent='Search matches from the original newspaper collection. Check the scan before treating a report as a fact.';for(const b of $('topics').children)b.setAttribute('aria-pressed','false');status(`Live search complete · ${records.length} pages loaded. The source reports ${data.total.toLocaleString()} matching pages.`);render();}
+  catch(error){status(`${error.name==='TimeoutError'?'The library did not respond in time.':error instanceof SyntaxError?'The library returned a non-JSON response.':error.message} Your previous results are unchanged. Try again later, or open the search at the Library of Congress.`);}finally{busy(false);render();}}
+function surprise(){if(!records.length)return;const record=records[Math.floor(Math.random()*records.length)];const spot=$('spotlight');spot.replaceChildren(imageNode(record));const body=el('div');body.append(el('p','A page pulled from this shelf','eyebrow'),el('h3',record.title),el('p',`${dateText(record.date)} · ${[record.city,record.state].filter(Boolean).join(', ')}`),el('p',`Matched the search “${current.query}”. What was the newspaper actually saying? Read the page, including nearby columns.`),link('Inspect the original page',record.url));spot.append(body);spot.hidden=false;spot.scrollIntoView({behavior:'smooth',block:'center'});}
+function download(name,type,content){const url=URL.createObjectURL(new Blob([content],{type}));const a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('searchForm').addEventListener('submit',e=>{e.preventDefault();search();});$('more').addEventListener('click',()=>search(true));$('shuffle').addEventListener('click',surprise);$('filter').addEventListener('input',render);$('clearClips').addEventListener('click',()=>{saved.clear();renderClips();render();});$('exportJSON').addEventListener('click',()=>download('oldnews-oddities-receipt.json','application/json',JSON.stringify(receipt([...saved.values()],{source:'Library of Congress / Chronicling America'}),null,2)));$('exportCSV').addEventListener('click',()=>download('oldnews-oddities-sources.csv','text/csv',csv([...saved.values()])));for(const id of ['query','operator','fromYear','toYear'])$(id).addEventListener('input',()=>{if(config)updateProviderLink();});
+async function init(){try{const responses=await Promise.all([fetch('./config.json',{cache:'no-cache'}),fetch('./data/shelf.json',{cache:'no-cache'})]);if(responses.some(r=>!r.ok))throw new Error('Could not load the retained shelf.');[config,shelf]=await Promise.all(responses.map(r=>r.json()));if(!config.topics?.length||!shelf.topics)throw new Error('The shelf configuration is incomplete.');$('capture').textContent=`${shelf.topics.reduce((n,t)=>n+t.records.length,0)} retained pages · ${config.topics.length} editable topics · Retrieved ${new Date(shelf.capturedAt).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'})}`;$('topics').replaceChildren(...config.topics.map(t=>{const b=el('button',t.label);b.type='button';b.dataset.id=t.id;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>chooseTopic(t.id));return b;}));chooseTopic(config.topics[0].id);}catch(error){status(`${error.message} Please reload or use the original collection link below.`);}}
+init();

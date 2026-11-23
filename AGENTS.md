@@ -26,3 +26,9 @@
   the extra practical detail in the hub README. Only the short source sentence
   belongs in the homepage record. Import the note with `scripts/sync_guides.py
   --tool TOOL_ID` in the hub before regenerating its README.
+
+- Keep topics and defaults in `web/config.json`; they are conveniences, not limits.
+  Derive topic and page counts from data. Test adding another configured topic.
+  Keep README “Expand or customize” exact paths and refresh/publish instructions current.
+  Preserve the current shelf/results if a provider request fails; never publish an empty
+  replacement caused by an API error. Browser searches are explicit and bounded.

@@ -1,21 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { cleanLines } from '../web/model.mjs';
-test('trims, removes blanks and preserves first-seen order', () => {
-  assert.deepEqual(cleanLines('  Halifax\nLangley\nHalifax\n\nVancouver  '), {
-    text: 'Halifax\nLangley\nVancouver', count: 3, removed: 1,
-  });
-});
-test('supports Windows and old Mac line endings', () => {
-  assert.equal(cleanLines('a\r\nb\ra').text, 'a\nb');
-});
-test('empty text and whitespace produce an empty result', () => {
-  assert.deepEqual(cleanLines(' \n\t'), { text: '', count: 0, removed: 0 });
-});
-test('preserves case and Unicode', () => {
-  assert.equal(cleanLines('Québec\nquébec\n東京\nQuébec').text, 'Québec\nquébec\n東京');
-});
-test('treats markup as ordinary text', () => {
-  assert.equal(cleanLines('<script>alert(1)</script>\n<script>alert(1)</script>').text, '<script>alert(1)</script>');
-});
-test('rejects non-text input', () => { assert.throws(() => cleanLines(null), TypeError); });
+import fs from 'node:fs';
+import {searchSpec,searchUrl,normalizeResponse,safeUrl,textUrl,matchedExcerpt,filterRecords,csv,receipt} from '../web/model.mjs';
+const shelf=JSON.parse(fs.readFileSync(new URL('../web/data/shelf.json',import.meta.url)));
+const config=JSON.parse(fs.readFileSync(new URL('../web/config.json',import.meta.url)));
+test('arbitrary search terms and dates reach page-specific provider query',()=>{const s=searchSpec('mechanical man','PHRASE',1850,1920);const u=new URL(searchUrl(s,20,2));assert.equal(u.searchParams.get('qs'),'mechanical man');assert.equal(u.searchParams.get('dl'),'page');assert.equal(u.searchParams.get('start_date'),'1850-01-01');assert.equal(u.searchParams.get('sp'),'2');assert.equal(new URL(searchUrl(s,20,2,false)).searchParams.has('fo'),false);});
+test('invalid requests rejected before fetching',()=>{for(const args of [['','AND',1900,1920],['a','BAD',1900,1920],['a','AND',1920,1900],['a','OR',100,1920]])assert.throws(()=>searchSpec(...args));});
+test('provider match count uses of, not page total',()=>{const r=normalizeResponse({results:[{page_id:'one',url:'http://www.loc.gov/resource/test/?sp=2',date:'1900-01-01',title:'<script>not HTML</script>',image_url:['https://evil.test/x.jpg'],number_page:['2']},{page_id:'one',url:'https://www.loc.gov/resource/test/?sp=2',date:'1900-01-01'}],pagination:{of:59,total:10}});assert.equal(r.total,59);assert.equal(r.records.length,1);assert.equal(r.records[0].image,null);assert.equal(r.records[0].title,'<script>not HTML</script>');});
+test('untrusted links are not published',()=>{assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('https://www.loc.gov.evil.test/resource'),null);assert.equal(safeUrl('https://name@www.loc.gov/resource'),null);assert.equal(safeUrl('http://www.loc.gov/resource/a'),'https://www.loc.gov/resource/a');});
+test('legitimate empty search distinct from malformed API response',()=>{assert.deepEqual(normalizeResponse({results:[],pagination:{of:0,total:0}}),{records:[],total:0});assert.throws(()=>normalizeResponse({error:'rate limited'}));assert.throws(()=>normalizeResponse({results:[{url:'https://evil.test/'}],pagination:{of:1}}));});
+test('OCR excerpts are offered only when a query term appears',()=>{assert.equal(matchedExcerpt({ocrExcerpt:'ordinary weather report'},'sea serpent'),'');assert.match(matchedExcerpt({ocrExcerpt:'A report about a sea serpent was contested.'},'sea serpent'),/serpent/);});
+test('saved receipt stays source-linked and CSV neutralizes formulas',()=>{const r={id:'a',title:'=SUM(A1)',date:'1900-01-01',city:'A',state:'B',url:'https://www.loc.gov/resource/a'};assert.match(csv([r]),/"'=SUM/);assert.equal(receipt([r],{query:'test'},'now').records[0].url,r.url);assert.equal(new URL(textUrl(r.url)).searchParams.get('st'),'text');});
+test('shelf expands with every configured topic and data-driven records',()=>{assert.deepEqual(shelf.topics.map(t=>t.id),config.topics.map(t=>t.id));for(const topic of shelf.topics){assert.ok(topic.records.length>0);assert.ok(topic.total>=topic.records.length);assert.equal(filterRecords(topic.records,'').length,topic.records.length);for(const r of topic.records)assert.ok(safeUrl(r.url));}});

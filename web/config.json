@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "title": "Old News Oddities",
+  "pageSize": 12,
+  "requestTimeoutSeconds": 90,
+  "minimumRequestIntervalSeconds": 4,
+  "defaultFromYear": 1800,
+  "defaultToYear": 1930,
+  "topics": [
+    {"id":"airships","label":"Mystery airships","query":"mysterious airship","operator":"PHRASE","fromYear":1800,"toYear":1930,"description":"Before flying saucers, newspapers reported mysterious craft in the sky. Follow the reports back to the printed page."},
+    {"id":"machines","label":"Impossible machines","query":"perpetual motion","operator":"PHRASE","fromYear":1800,"toYear":1930,"description":"Inventors, demonstrations and doubts. An advertisement or a claim in print is not evidence that a machine worked."},
+    {"id":"signals","label":"Messages through the air","query":"wireless telegraph","operator":"PHRASE","fromYear":1800,"toYear":1930,"description":"Explore the early language of wireless communication, including speculation, practical experiments and commercial promises."},
+    {"id":"sea","label":"Creatures at sea","query":"sea serpent","operator":"PHRASE","fromYear":1800,"toYear":1930,"description":"Sea-monster sightings, tall tales and explanations. Read the surrounding columns before deciding what a report meant."}
+  ]
+}

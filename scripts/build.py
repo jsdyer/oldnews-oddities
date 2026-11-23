@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import shutil
 import tempfile
+from collect import validate_config
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +43,10 @@ def metadata(root=ROOT):
 
 def build(root=ROOT):
     tool = metadata(root)
+    validate_config(json.loads((root / "web/config.json").read_text()))
+    shelf = json.loads((root / "web/data/shelf.json").read_text())
+    if shelf.get("schemaVersion") != 1 or not isinstance(shelf.get("topics"), list) or not shelf["topics"]:
+        raise ValueError("Retained newspaper shelf is invalid")
     output = root / "dist"
     if output.is_symlink():
         raise ValueError("dist must not be a symlink")

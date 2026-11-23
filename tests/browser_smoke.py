@@ -3,6 +3,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import shutil
+import json
 import tempfile
 import threading
 from playwright.sync_api import sync_playwright
@@ -29,22 +30,37 @@ def main():
                 errors = []
                 page.on("pageerror", lambda error: errors.append(str(error)))
                 page.goto(f"http://127.0.0.1:{server.server_port}/example-tool/")
-                page.locator("#sample").click()
-                assert page.locator("#output").input_value() == "Halifax\nLangley\nVancouver"
-                assert "1 duplicate removed" in page.locator("#status").inner_text()
-                page.locator("#input").fill('<img src=x onerror="alert(1)">\n<img src=x onerror="alert(1)">')
-                assert page.locator("#output").input_value() == '<img src=x onerror="alert(1)">'
-                assert page.locator("img").count() == 0
-                page.locator("#clear").click()
-                assert page.locator("#output").input_value() == ""
-                page.locator("#sample").click()
+                page.locator(".record").first.wait_for()
+                assert page.locator("#topics button").count() > 0
+                page.locator(".save").first.click()
+                assert "1 page" in page.locator("#clipCount").inner_text()
+                page.locator("#shuffle").click()
+                assert page.locator("#spotlight").is_visible()
+                page.locator("#filter").fill("nothing-matches-this-unique-text")
+                assert page.locator(".record").count() == 0
+                page.locator("#filter").fill("")
+                assert page.locator(".record").count() > 0
+                with page.expect_download() as download:
+                    page.locator("#exportJSON").click()
+                assert download.value.suggested_filename.endswith(".json")
+                page.locator("#clearClips").click()
+                assert page.locator("#exportJSON").is_disabled()
+                captured = json.loads((ROOT / "web/data/shelf.json").read_text())["topics"][0]["records"][0]
+                mock = {"results": [{"page_id": captured["id"], "url": captured["url"], "date": captured["date"], "title": captured["title"], "image_url": [], "description": [], "location_city": [captured["city"]], "location_state": [captured["state"]]}], "pagination": {"of": 1, "total": 1}}
+                page.route("https://www.loc.gov/collections/chronicling-america/**", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps(mock)))
+                page.locator("summary").click()
+                page.locator("#query").fill("mechanical man")
+                page.locator("#searchSubmit").click()
+                page.wait_for_function("document.getElementById('status').textContent.includes('Live search complete')")
+                assert page.locator(".record").count() == 1
+                assert "mechanical man" in page.locator("#shelfTitle").inner_text()
                 page.screenshot(path=str(screenshots / "desktop.png"), full_page=True)
                 page.set_viewport_size({"width": 390, "height": 844})
                 assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
                 page.screenshot(path=str(screenshots / "mobile.png"), full_page=True)
                 assert not errors, errors
                 browser.close()
-            print("Browser checks passed: project subpath, sample, clear, safe text and mobile layout")
+            print("Browser checks passed: real shelf, topic cards, clippings export, filters, shuffle and mobile layout")
         finally:
             server.shutdown()
 

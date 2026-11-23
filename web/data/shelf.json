@@ -1,0 +1,824 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-23T05:13:01Z",
+  "configSha256": "f7c6c21b234ecc304f93e16c22ecfa98ced47f13852ebdd589e2e18589231ad5",
+  "publisher": "Library of Congress / Chronicling America",
+  "topics": [
+    {
+      "id": "airships",
+      "query": "mysterious airship",
+      "operator": "PHRASE",
+      "fromYear": 1800,
+      "toYear": 1930,
+      "total": 55,
+      "records": [
+        {
+          "id": "sn83025316-1917-11-01-ed-1-0678",
+          "title": "Image 1 of The Daily Missoulian (Missoula, Mont.), November 1, 1917",
+          "date": "1917-11-01",
+          "url": "https://www.loc.gov/resource/sn83025316/1917-11-01/ed-1/?sp=1&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_indigobunting_ver02:data:sn83025316:00295860224:1917110101:0678/full/pct:6.25/0/default.jpg#h=435&w=337",
+          "paper": "the daily missoulian (missoula, mont.) 1904-1961",
+          "city": "missoula",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "o iff ff M flisrnt fours itff for I ml __ HBP Mp yry lt _ it 3 1 1 111 a tituqM f fcafu _ v f MISSOULA MONTAMArtHURSDftY MORNING NOVEMBER t 1917 PRldE FIVE Ml I ifoVil l m inrwjWU rwWT keepfîttNrni rv h vktfcf tooV guff tpvArar IN HUN INVASION rf Editor Strike Bulk tin Trite to Escape Authorities iACES INDICTMENT FOR DISLOYAL TALK Bills Returned by Grand Jury Against Others for Sedition Butte Oct 31SpecialCaught in tello where it is said he went hen he got the tip his activities were being looked Into oy the federal grand Jury George R Tompkins will face an indictment In Butte for uttering and publlshitUC seditious things In what has been known as the Strike Bulle tin an occasional production got out Under the auspices of the recently formed Minera union and its filled In dustrial Workers unions Appeal lor Trouble In some of these bulletins words Iwere used which could be taken as an I a",
+          "lccn": "sn83025316",
+          "page": "1"
+        },
+        {
+          "id": "sn82014248-1915-01-20-ed-1-0225",
+          "title": "Image 7 of Daily Kennebec journal (Augusta, Me.), January 20, 1915",
+          "date": "1915-01-20",
+          "url": "https://www.loc.gov/resource/sn82014248/1915-01-20/ed-1/?sp=7&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:me:batch_me_eaton_ver01:data:sn82014248:00513682803:1915012001:0225/full/pct:6.25/0/default.jpg#h=471&w=338",
+          "paper": "daily kennebec journal (augusta, me.) 1870-1975 [microfilm reel]",
+          "city": "augusta",
+          "state": "maine",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "ONLY THREE DAYS Fathers and Mothers Get This Useful Set for the Children Let the Boys Know That Reference Thereto Leads to Success In planning this great educational distribution for readers of THE JOURNAL the National Newspaper Syndicate arranged for an o uoks that it was thought would fill the demand under ordinary conditions but the sale has been far greater than anticipatedAUGUSTA is awake to the fact that EVERYBODYS Cyclopedia is all and MORE than is claimed for ithat it is a concise and accurate work of referencethat it is MODERN convenient COMPLETE Hence the throngs of ernhunaiic couponclippers eager to take advantage of this astonishing offer so the supply is not likely to last until CnfiirviciTT_nnf t __t__hi i ___ _ _ next Saturday it TODAY bui the oner must be withdrawn on that date ACT QUICKLYclip the coupon printed below and present FOR No Installments No Other Charge Money ",
+          "lccn": "sn82014248",
+          "page": "7"
+        },
+        {
+          "id": "sn83025316-1909-12-23-ed-1-0676",
+          "title": "Image 1 of The Daily Missoulian (Missoula, Mont.), December 23, 1909, (Morning)",
+          "date": "1909-12-23",
+          "url": "https://www.loc.gov/resource/sn83025316/1909-12-23/ed-1/?sp=1&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_flyingsquirrel_ver02:data:sn83025316:00294554634:1909122301:0676/full/pct:6.25/0/default.jpg#h=424&w=335",
+          "paper": "the daily missoulian (missoula, mont.) 1904-1961",
+          "city": "missoula",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE WH THE DAILY TSSOULIA CHRIMA ToiLmorrowr er DFO A32 IL O TatR ItcnT VrOL XXXVI NO 232 MIS8OULA MONTANA THUItSDAY MORNING DECEMBER 2 1909 PRICE FIVE CENS SCHLEY LOYAL TO COOK STILL CALLS UPON PEARY TO SUBMIT DATA TO UNIVERSITY OF COPENHAGEN ALSO IECIAIES IT BUT FAIR Retired Admiral Thinks That in Jus tioe to All the Same Body That Turned Down Physicians Claim to Have Reached the Pole Should Pass Upon Commanders Records Washington Dec 22Reaffirming his complete confidence in Dr Cook Rear Admiral W S Schley retired today called upon Commander Peary to submit his proofs that he reached the north pole to gome scientific body other than the National Geographic society This the admiral declared should be done at once in the interist of justice and to establish beyond question the claims of Peary The admiral believes that the same body which threw out and repudiated Cooks data should be perm",
+          "lccn": "sn83025316",
+          "page": "1"
+        },
+        {
+          "id": "sn98060264-1913-03-20-ed-1-0271",
+          "title": "Image 4 of Valdez daily prospector (Valdez, Alaska), March 20, 1913",
+          "date": "1913-03-20",
+          "url": "https://www.loc.gov/resource/sn98060264/1913-03-20/ed-1/?sp=4&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:ak:batch_ak_eskimocurlew_ver02:data:sn98060264:00279525759:1913032001:0271/full/pct:6.25/0/default.jpg#h=391&w=288",
+          "paper": "valdez daily prospector (valdez, alaska) 1905-1918",
+          "city": "valdez",
+          "state": "alaska",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "WHAT IS DOING AT HIE CAPITOL Rodens EightHour Law Causing Much CommentRay and Collins Worried Juneau March 20The Roden 8hour bill for miners which is fathered in Hie House by Thomas iaffney of Nome is causing con siderable comment in Southeast ern Alaska where many of the mines are working men ten and twelve hour shifts The manag er of one of the largest mines in this section is in favor of the bill in part but none of the operators will support it in its entirely Representative Shoups bill providing compulsory attendance at schools of the children of the territory has passed Hie House and is now in the Senate The fisheries commit tees of both houses will hedd a hearing J m March 29th on the aul iIisli trap bill The cannery companies are lighting the bill as they claim j it would require more men to catch the same amount of lisli 1110 11111111 LOO I If niur till taxation will meet March ",
+          "lccn": "sn98060264",
+          "page": "4"
+        },
+        {
+          "id": "sn83030214-1909-06-06-ed-1-0089",
+          "title": "Image 22 of New-York tribune (New York [N.Y.]), June 6, 1909",
+          "date": "1909-06-06",
+          "url": "https://www.loc.gov/resource/sn83030214/1909-06-06/ed-1/?sp=22&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_haiti_ver02:data:sn83030214:0017503951A:1909060601:0089/full/pct:3.125/0/default.jpg#h=259&w=183",
+          "paper": "new-york tribune (new york [n.y.]) 1866-1924",
+          "city": "new york",
+          "state": "new york",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "NEWYORK DAILY TRIBUNE SUNDAY JUNE 6 1909 AN AERIAL BATTLE OF THE FUTURE The scene depicted by our artist may soon be well within the bounds of possibility for Ger many alread possessesin the Zeppelinan airship is B of crossing over to England sailing before the easterly winds which blow al most continuously across the North Sea for the three spring months of the year The Zeppelin could carry enough explosives to destroy the WAIT MR TAFTS SIGNAL a n wiil claim them for the greater part of the sum mer and they will as usual entertain many parties from the North The estate is situated a few miles from Nashville and near Travellers Rest the girlhood home of Mrs Dickinson where as Miss Martha Maxwell Overton she was a belle of that part of the country Belle Meade is as famed for its splendid horses and cattle as for the hospitality of its owner and 13 one of the most beautiful sunaner homes p",
+          "lccn": "sn83030214",
+          "page": "22"
+        },
+        {
+          "id": "sn83030214-1909-06-06-ed-1-0084",
+          "title": "Image 17 of New-York tribune (New York [N.Y.]), June 6, 1909",
+          "date": "1909-06-06",
+          "url": "https://www.loc.gov/resource/sn83030214/1909-06-06/ed-1/?sp=17&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_haiti_ver02:data:sn83030214:0017503951A:1909060601:0084/full/pct:3.125/0/default.jpg#h=259&w=183",
+          "paper": "new-york tribune (new york [n.y.]) 1866-1924",
+          "city": "new york",
+          "state": "new york",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "NEWYORK DAILY TRIBUNE SUNDAY JUNE 6 1909 _ Aluminium 3 Sheer Bracing every 43 f Fortwon gf ship which er A Ee CASRN Na Se we a Gat so LAW Fossage YAR Panes I00 2 x Fo De Port Stern EARNS g st Aropeler _ rnd a oo ReTTilIONs fo grve sticrngin 3 1 3 sr dow COTTON FABRIC N F 358s encouniers FT DreEsSSare J Vapour from 7 covered 5 J s Ae od 7 J Dont wil communication cords Stern boat car engine TOrwarc Pod Cr y 20 bermeen cars with engine 281 long wiih eagine 4 Pa Th EB Dipping planes Petra Supply Dipping planas SECTIONAL VIEW OF THE ZEPPELIN AIRSHIP SHOWING THE ARRANGEMENT OF THE INTERNAL BALLOONS WHICH SUPPORT IT The Zeppelin airship is not composed of one single elongated gasbag as might be supposed from its external appearance It is really supported in the air by seventeen separate balicons inciosed within a complex aluminum framework over which a stout outer covering of rubberized cotton",
+          "lccn": "sn83030214",
+          "page": "17"
+        },
+        {
+          "id": "sn86075298-1917-11-02-ed-1-0807",
+          "title": "Image 8 of The Ronan pioneer (Ronan, Mont.), November 2, 1917",
+          "date": "1917-11-02",
+          "url": "https://www.loc.gov/resource/sn86075298/1917-11-02/ed-1/?sp=8&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_eagle_ver02:data:sn86075298:00294554816:1917110201:0807/full/pct:6.25/0/default.jpg#h=444&w=309",
+          "paper": "the ronan pioneer (ronan, mont.) 1910-1970",
+          "city": "ronan",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "Civilian Patriots Although no blast of bugles her alds the event many patriotic civ LI ilians are being recruited to the army of thrift The service is not severe It is practical training in money prudence Enlist your dol lars here where they will promptly respond to your command and meanwhile are earning interest RONAN STATE BANK A J BROWER President LEON BISHOP Cashier MEALS SERVED AT THE COUNTER CAFE 35c and up Browns Employment Agency and Pool Room All kinds of help furnished FRANK A BROWN Ronan Mont SQUALITY BAKERY AND j CAFE All Kinds of Bread and Pastery Baked Daily Meals Short Orders and Lunches J I CARR Prop CHRIS J HOESCHEN Licensed Embalmer Hearse in Connection ST IGNATIUS MONTANA J F OBR IEN Agent RONAN rffýrtGtfEýNýýHE4ECN0 folriet The Past Beg i An e w Worrying over what has hIi ppeInIdl wiill not corect the errors of the past Better begin anew Adopt certain well deined poli",
+          "lccn": "sn86075298",
+          "page": "8"
+        },
+        {
+          "id": "sn87065567-1897-05-13-ed-1-0265",
+          "title": "Image 3 of The Free press (Poplarville, Miss.), May 13, 1897",
+          "date": "1897-05-13",
+          "url": "https://www.loc.gov/resource/sn87065567/1897-05-13/ed-1/?sp=3&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_flint_ver01:data:sn87065567:00383344360:1897051301:0265/full/pct:6.25/0/default.jpg#h=381&w=249",
+          "paper": "the free press (poplarville, miss.) 1890-19??",
+          "city": "poplarville",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "TOWN AND COUNTY POPLABVILLB MARKET COBBKCTED WBEKLT Jaeou SSSSwdflM per set Bulk Pork Cotton Corn Coffee Chicken gff Floor Lard Sugar Wool 67 7 SO 64 6 60 12415 160300 10 5J7 649 6 14 rh following schedule went ini effect Sunday May 2nd 1897 o 3 gonthbonnd cine 737 p m i southbound due 909 a m 2 northbound due 737 p m 4 northbound due 1019 a m 33 southbound due 1130 a m 334 northbound duo 1130 a m beTBUB Jbon moot be true thyself If thou the truth wouldst teach The soul must overflow If thou Anothers soul wouldst reach Id needs the overflow of heart To give the lips full speech Think truly and thy thoughts Shall the worlds famine feed Live truly and each word of thine Shall be a fruitful seed Live truly and thy life shall be A ereat and noble creed 6 U Bonar The little folks are enjoying mul berries The blackberry crop is very promising Remember your Free Press does when you sell your wo",
+          "lccn": "sn87065567",
+          "page": "3"
+        },
+        {
+          "id": "sn86074053-1910-02-24-ed-1-0347",
+          "title": "Image 8 of The Brandon news (Brandon, Miss.), February 24, 1910",
+          "date": "1910-02-24",
+          "url": "https://www.loc.gov/resource/sn86074053/1910-02-24/ed-1/?sp=8&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_flint_ver01:data:sn86074053:00383344426:1910022401:0347/full/pct:3.125/0/default.jpg#h=328&w=225",
+          "paper": "the brandon news (brandon, miss.) 1892-1961",
+          "city": "brandon",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "HOLIDAY WARES We are prepared fora big Holiday J Trade and wish to invite our friends and customers to visit our store and 1 examine our extensive line of goods especially desirable for the Holiday Season Our stock is absolutely new throughout and we feel sure that the most fastioious can find what they wish C A RICHARDSON Co 417 Cast Capitol Street JACKSON MISS Furniture Stoves Sewing Machines and Organs Our stock is completeeverything for furnish ing house and kitchen from the modest ar ticle to the most expensive and at the lowest prices Our location on South State St at the corner of Pearl St makes it most convenient for Rankin County customers We want your trade The Smith Company Jackson Miss Avery Plows Who doesnt know Avery when plow is mentioned Every year Avery improves his plows and this he has been doing for a quarter of a century Get the benefit of this great mind working alw",
+          "lccn": "sn86074053",
+          "page": "8"
+        },
+        {
+          "id": "sn84036220-1909-12-28-ed-1-0433",
+          "title": "Image 2 of Fergus County Democrat (Lewistown, Mont.), December 28, 1909",
+          "date": "1909-12-28",
+          "url": "https://www.loc.gov/resource/sn84036220/1909-12-28/ed-1/?sp=2&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_egret_ver02:data:sn84036220:00295861010:1909122801:0433/full/pct:6.25/0/default.jpg#h=447&w=317",
+          "paper": "fergus county democrat (lewistown, mont.) 1904-1919",
+          "city": "lewistown",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "Ferps County Democrat css Official Paper of Fergus County TOM STOUT Publisher and Prop Lewistown Montana Dec 28 1909 Entered at the postoffice at Lewis town Montana as second class mat ter SUBSCRIPTION One year Six months 1 Three months 75 Notice to Subscribers In ordering paper changed to a new address mention old address also to insure prompt delivery Subscribers failing to receive their papers will please notify this office THE CASE OF DR COOK Anaconda Standard Alert to honor manly sentiment and deeds of heroic enterprise the world burst into ap plause when on the first day of last September Dr Frederick A Cook proclaimed that he had successfully completed in April 1908 a journey to the north pole Many and unhappy had been the expeditions with that goal in view and Cook s word for it being freely accepted tthe achieve ment was universally recognized as one of immortal splendor sheddin",
+          "lccn": "sn84036220",
+          "page": "2"
+        },
+        {
+          "id": "sn85034375-1897-04-24-ed-1-1005",
+          "title": "Image 5 of The Grenada sentinel (Grenada, Miss.), April 24, 1897",
+          "date": "1897-04-24",
+          "url": "https://www.loc.gov/resource/sn85034375/1897-04-24/ed-1/?sp=5&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_eyelet_ver02:data:sn85034375:00199917043:1897042401:1005/full/pct:6.25/0/default.jpg#h=371&w=253",
+          "paper": "the grenada sentinel (grenada, miss.) 1868-1955",
+          "city": "grenada",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE SENTINEL GRENADA MISSISSIPPI PATtVKDAY APRIL 34 iW stereo at the PootoMce at Orenada Miss secondclass matter_ Mtuci miwm wmh cbmt nmt mt KAILKOAU TIME TAMIK Illinois Central Railroad TRAINS GOING NORTH ui Loalsrllle A Cincinnati via Gre nada and Memphis SFast Mall leaves 4 IIa m 2 iClileaoLimited leaves457r N J IVMemphis and Orenada Lo N aal Pasaenner leaves r H Local Frt frqm Grenada to Memphli learei00 a To Chloago via Water Valley Northern Express leaves S SipAst Express leave No MLocal Frt to Water Valley leaves m TRAINS GOING8C0TH Rhlcaxo Louisville A Cincinnati via nl Memphis and Grenada Fast Mall leaves 1055 p M M sNew Orleans Limited leaves 1100 A K iVLocal Frt Mem to Gre f nada arrives400r M Sontli Via Water Valter to Grenada southern Express arrives 10M P u riat Exnress leaves 1110 AM LocalFr t Wator Valley to ronton leave9t0A M A 8 HURT Ticket Agent H No tli 450 A K 502 P ",
+          "lccn": "sn85034375",
+          "page": "5"
+        },
+        {
+          "id": "sn89053283-1897-04-14-ed-1-0490",
+          "title": "Image 1 of The Dawson news (Dawson, Ga.;Dawson, Georgia), April 14, 1897",
+          "date": "1897-04-14",
+          "url": "https://www.loc.gov/resource/sn89053283/1897-04-14/ed-1/?sp=1&q=mysterious+airship",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:gu:batch_gu_abby_ver02:data:sn89053283:00517177015:1897041401:0490/full/pct:3.125/0/default.jpg#h=312&w=195",
+          "paper": "the dawson news (dawson, ga.;dawson, georgia) 1889-current",
+          "city": "dawson",
+          "state": "georgia",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE DAWSON NEWS By E L Rainey hargest and Best R g i I R A Look Will Convince selected Stock of Goods You and We Invite SoiEm eO R S 1 Ever BFOUghttO Dawson VYV VVVVVVVY VYV VYV VYV VY VYV VYV Y You to Ca Ry s G e UR NEW SPRING STOCK IS NOW READY FOR INSPECTION C have all the new style novelties in Lawns Muslins Percales Organdies Dimities Mull and many other Beautiful Wash Fabrics Also a full line of landsmnc Wool Dress and Skirt Patterns In fact our Dress Goods Department is complete in gvery particular Ladies Shirt Waists Gloves Husiery wderwear Coliarsand Cuffs and many other summer artictles will be found there We are catering especially to the wants of the ladies and will appreci e acallfrom them We havye just received J A Complete Ling of Mens and Boys Clothing Shoes and Hats and Furnishing G oods 4 have marked them down to the lowest figures We want you to come and look at our st",
+          "lccn": "sn89053283",
+          "page": "1"
+        }
+      ],
+      "sourceUrl": "https://www.loc.gov/collections/chronicling-america/?fo=json&c=12&sp=1&st=gallery&dl=page&searchType=advanced&qs=mysterious+airship&ops=PHRASE&start_date=1800-01-01&end_date=1930-12-31",
+      "sourceSha256": "a7dfe8de387cd941c4ccc2d4e929567cfa96a44c84c847e31bf58f2b71d41527"
+    },
+    {
+      "id": "machines",
+      "query": "perpetual motion",
+      "operator": "PHRASE",
+      "fromYear": 1800,
+      "toYear": 1930,
+      "total": 4695,
+      "records": [
+        {
+          "id": "sn93067841-1903-06-11-ed-1-0113",
+          "title": "Image 4 of The county record (Kingstree, S.C.), June 11, 1903",
+          "date": "1903-06-11",
+          "url": "https://www.loc.gov/resource/sn93067841/1903-06-11/ed-1/?sp=4&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:scu:batch_scu_elgincatfishstomp_ver02:data:sn93067841:0029586252A:1903061101:0113/full/pct:3.125/0/default.jpg#h=268&w=173",
+          "paper": "the county record (kingstree, s.c.) 1885-1975",
+          "city": "kingstree",
+          "state": "south carolina",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "4 Tltc Countg lictcrd f PUBLISHED EVERY THURSDAY AT KINGSTRKE S C C W WOLFE Editor and Proprietor TERMS BTBSCRIPTION RATES One conv one year 100 Onecofy si month SO One cony thiee month 2 Subscriptions payable in advance ADVERTISING RATIOS One Inch first insertion 100 pHeb gftbspquent insertion 50 cent ObituafiesanUl ributvs of Respect over 10 words charged for as tegular advertisements Liberal reduction on advertising made for three six and twelve mouths contracts Communication must le Accompanied r the real name and addrese of the writer in order to receive attention So communication of a personal nature will be publish except a an adver tweniDt Addreas All letters ami make all drafts t pjfcleto h s C W Wolfe Klnsrstive Sc j THURSDAY JUNE II 1003 Sv Brief Records vvHe that giveth to the poor lendth to the Lord W f Editor William Randolph Hearst seems to be loaded for Baer A corresponde",
+          "lccn": "sn93067841",
+          "page": "4"
+        },
+        {
+          "id": "sn84026965-1898-03-30-ed-2-0198",
+          "title": "Image 6 of The Anderson intelligencer (Anderson Court House, S.C.), March 30, 1898",
+          "date": "1898-03-30",
+          "url": "https://www.loc.gov/resource/sn84026965/1898-03-30/ed-2/?sp=6&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:scu:batch_scu_evadeestruction_ver01:data:sn84026965:00294550859:1898033002:0198/full/pct:3.125/0/default.jpg#h=285&w=217",
+          "paper": "the anderson intelligencer (anderson court house, s.c.) 1860-1914",
+          "city": "anderson",
+          "state": "south carolina",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "PERPETUA IiijLreiiiiitv rX1litt I Ins This IDclusi A Yo the Loh Vor many centuries past the prob lem of perpetual motion has been the bugbear of busy brains and the in ven tors who have tried their handy at the sabicct i legion Like the search af ter thc elixer vita the transmutation i the baser metals into thc nobler and the quadrature of the circle per petan motion is a subject eminently tuitablc for constitutional wonderer and halflearned mechanics All the wouldbe inventors of this early demonstrated impossibility however have not been halflearned by any lacans Witness that famous j poet sculptor arid general genius Leonardo da Vinci The llritish Mu i brum contains a rough sketch from tho painter of the Last Supper of a perpetual motion machine arranged as the majority of them arc on the principie of hinged weights round thc j periphery of a wheel Arkwright again was certainly not a f",
+          "lccn": "sn84026965",
+          "page": "6"
+        },
+        {
+          "id": "sn84026965-1898-03-30-ed-1-0140",
+          "title": "Image 6 of The Anderson intelligencer (Anderson Court House, S.C.), March 30, 1898",
+          "date": "1898-03-30",
+          "url": "https://www.loc.gov/resource/sn84026965/1898-03-30/ed-1/?sp=6&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:scu:batch_scu_evadeestruction_ver01:data:sn84026965:00294550811:1898033001:0140/full/pct:3.125/0/default.jpg#h=317&w=213",
+          "paper": "the anderson intelligencer (anderson court house, s.c.) 1860-1914",
+          "city": "anderson",
+          "state": "south carolina",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "PERPETLL Ingenroity Tliat Has This Delias From the I For many centuries past the prot lem of perpetual motion has been th bugbear of busy brains and the inven tors who have tried their hands at th sibject is legion Like the search ai ter the elixer vitae the transmutatioi t the baser metals into the nobler and the quadrature of the circle pei petual motion is a subject eminentl suitable for constitutional wonderer and halflearned mechanics All the wouldbe inventors of thi early demonstrated impossibility however have not been half learn e by any means Witness that f amou poet seulptor and general genius Leonardo da Vinci The British Mu leum contains a rough sketch from thi painter of the Last Supper of t perpetual mot m machine arrange as the majority of them are on th principle of hinged weights round thc periphery of a wheel Arkwright again was certainly not a fool nor a halflearned ma",
+          "lccn": "sn84026965",
+          "page": "6"
+        },
+        {
+          "id": "sn86063790-1921-07-28-ed-1-0026",
+          "title": "Image 2 of The Bamberg herald (Bamberg, S.C.), July 28, 1921",
+          "date": "1921-07-28",
+          "url": "https://www.loc.gov/resource/sn86063790/1921-07-28/ed-1/?sp=2&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:scu:batch_scu_bogoff_ver01:data:sn86063790:00295862427:1921072801:0026/full/pct:3.125/0/default.jpg#h=334&w=213",
+          "paper": "the bamberg herald (bamberg, s.c.) 1891-1972",
+          "city": "bamberg",
+          "state": "south carolina",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "ON TRAIL PERPETUAL MOTION 4 Only Difficulty He Doesnt Know How to Stop Machine Greenville county hasnt anything on Richland county when it comes to producing an inventor of a perpetual motion device for R A Sligh a farmer living about three miles out from Columbia has been flirting with perpetual motion for lo these many years has worked perpetual motion to a fareyouwell knows perpetual motion as a mother does her child and has refrained from making his machine simply because he doesnt know how to get it stopped once it begins to work he said Mr Sligh saw the story in the State about a Mr Pym of Greenville hav Ing a perpetual motion device 11 warmed his heart to know that another man in South Carolina was on a trail that has led many a scientist into the darkness of despair so he came to Columbia asked about Mr Pym and will confer with him regarding the machine Sure it Will Work v From t",
+          "lccn": "sn86063790",
+          "page": "2"
+        },
+        {
+          "id": "sn83025308-1890-07-17-ed-1-0879",
+          "title": "Image 6 of The Helena independent (Helena, Mont.), July 17, 1890, (Morning)",
+          "date": "1890-07-17",
+          "url": "https://www.loc.gov/resource/sn83025308/1890-07-17/ed-1/?sp=6&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_nuthatch_ver01:data:sn83025308:00212477357:1890071701:0879/full/pct:6.25/0/default.jpg#h=451&w=325",
+          "paper": "the helena independent (helena, mont.) 1875-1943",
+          "city": "helena",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "GETS OF CRANIKS SMachine Lunatics and Per petual Motion Maniacs in Washington Row They Make Life a Burden to the Patent Office People 1Ih Would Infringe on the Prerogative of the CreatorSome of Their Devices WAsunorov July 16The last inventor of a flying machine was found dead in his bed ottoe day recently at a fourthrate hotel on Pennsylvania avenue He died of a broken heart All the little savings with which he came to Washington a few months ago had been spent in the construction of models that somehow would never quite work His notion was not that of the ordi nary experimenter in aeronautics whose ambition is to fly high On the contrary he considered that for all useful purposes it was simply desirable to elevate and con trol his apparatus at a height of not more than ten feet above the ground and thus to swim along over peoples heads at such a rate of speed as his propelling equipmen",
+          "lccn": "sn83025308",
+          "page": "6"
+        },
+        {
+          "id": "sn84036207-1910-05-25-ed-1-0597",
+          "title": "Image 8 of The Western news (Stevensville, Mont.), May 25, 1910",
+          "date": "1910-05-25",
+          "url": "https://www.loc.gov/resource/sn84036207/1910-05-25/ed-1/?sp=8&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_harrier_ver01:data:sn84036207:00295860194:1910052501:0597/full/pct:6.25/0/default.jpg#h=453&w=319",
+          "paper": "the western news (stevensville, mont.) 1890-1977",
+          "city": "hamilton",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "HORNED DORSET SHEEP This Breed Commande Very High Prices at All Times An expert sheepman says Dorset beep belong to the middle wools These are the mutton breeds sought after by butchers on account of cut ting so well on the block In size the Dorset rams when developed will weigh from 200 to 200 pounds some going a bit higher ewes from 150 to 1110 pounds The wool Is of good fair length and fiber of the crisp strong sort and at all times commands the highest price Both the ewes and rams hare horns the rams of course much heavier stronger and larger Whether on ac count of their horns the Dorset are less timid than other breeds 1 am not prepared to say Nevertheless It Is well established that no dog takes his first lessons In killing sheep from a Dorset flock though a sheep killing dog proficient in the art will sometimes become foolhardy enough to attack them Still In and about the burns an",
+          "lccn": "sn84036207",
+          "page": "8"
+        },
+        {
+          "id": "sn83016025-1897-05-26-ed-1-0540",
+          "title": "Image 6 of The Portland daily press (Portland, Me.), May 26, 1897",
+          "date": "1897-05-26",
+          "url": "https://www.loc.gov/resource/sn83016025/1897-05-26/ed-1/?sp=6&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:me:batch_me_isleboro_ver01:data:sn83016025:00414210661:1897052601:0540/full/pct:6.25/0/default.jpg#h=404&w=357",
+          "paper": "the portland daily press (portland, me.) 1862-1921",
+          "city": "portland",
+          "state": "maine",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "3USCEILANEOUS Be Weil Be free from pain Cease to know sickness You can do this If you will keep Your entire system in perfect Order by seeing that the Vital organs are healthy Kickapoo Indian Sagvva Insures this by Promoting a healthy condition Of the Kidneys Liver Stomach and Blood It is The great alleviator of a Depleted system Purely Vegetable and absolutely Harmless All druggists I We Have tlie Finest Assort incut of High Grade S i PIANOS J 5 we have ever shown and j in ail the latest woods used for piano cases X We carry the highest grade the medlnm and t the low grade pianos X J Our prices from 200 TO 900 i X t EASY TERMS I oooooo t I Gressey Jones Allen t PIANO AND MUSIC HOUSE 566 Congress and 125 Free St J t BAXTER BLOCK 9 9 marSleodtf THE DAILY PRESS Can always be found at the periodia tores of E W Roberts 109 Congress street A B Merrill 247 WE Goold 406 N G Fessenden 626 W H Je",
+          "lccn": "sn83016025",
+          "page": "6"
+        },
+        {
+          "id": "sn83025308-1892-08-14-ed-1-0740",
+          "title": "Image 9 of The Helena independent (Helena, Mont.), August 14, 1892, (Morning)",
+          "date": "1892-08-14",
+          "url": "https://www.loc.gov/resource/sn83025308/1892-08-14/ed-1/?sp=9&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_jay_ver01:data:sn83025308:00212476651:1892081401:0740/full/pct:6.25/0/default.jpg#h=440&w=278",
+          "paper": "the helena independent (helena, mont.) 1875-1943",
+          "city": "helena",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "PART 2 HLNA NTAN UNDAY ORNIN AUGUST 1 1892 P V NT VOL XXXIIIUNO 14 HELENA IMNTANA SUNDAY hORNIN AVGUST 14 1892 PRIGS FIVY CBNTS ULLYANI VENUS E MILO he Bruiser Not in the Comparison of Figure for Artistlo Points evpral Artists Disous the Rela tive Points in Male and Fe male Forms Iohn L aercules and Two Venuese Used as Subjects for IllustratlonArtlsts Not Unaaimaone Written for Tae HEaLA INDsnPENDNT1 OES WOMAN DESERVE THE oredit she has had fur sech a long time of monopolizing the greater part of the beauty in the world Does the masculine or the feminine figure approach nearer the ideal type of beauty And among men and women as they are today in which sex is the finer type of beauty more frequently found In short which deserves to be called the beautiful sex These questions were laid before the leading figure artists of New Yorkartists who have spent years in the study and por trayal of ",
+          "lccn": "sn83025308",
+          "page": "9"
+        },
+        {
+          "id": "sn86091142-1891-07-07-ed-1-0045",
+          "title": "Image 3 of The DeLamar nugget (DeLamar, Idaho), July 7, 1891",
+          "date": "1891-07-07",
+          "url": "https://www.loc.gov/resource/sn86091142/1891-07-07/ed-1/?sp=3&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:idhi:batch_idhi_everglades_ver01:data:sn86091142:00414211252:1891070701:0045/full/pct:6.25/0/default.jpg#h=377&w=253",
+          "paper": "the delamar nugget (delamar, idaho) 1891-1900",
+          "city": "delamar",
+          "state": "idaho",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "A ROARING MONSTER Xhe Greatest Well In the World at Huron In South Dakota The artesian well on the Valley stock farm continues to attract great crowds of people says the Huronite S 1 And well it may for it is really the sender of the age Following the tests mode of the pressure on Saturday and Sunday the cap was removed and through a nozzle a two and a half inch stream of water was shot up into the air a distance of one hundred and twen tyfive to one hundred and forty feet The direct course of the stream was greatly interfered with by the cross beams and braces of the derrick with a clear way and no wind a two and a half inch stream would be sent one hundred and sixty feet into the air So great is the pressure that pine boards six inches wide and one inch thick used as stays and braces on the derrick fifty feet above the mouth of the well were broken by the force of the water While this ",
+          "lccn": "sn86091142",
+          "page": "3"
+        },
+        {
+          "id": "sn83025060-1906-02-08-ed-1-0411",
+          "title": "Image 8 of The Muskogee cimeter (Muskogee, Indian Territory, Okla.), February 8, 1906",
+          "date": "1906-02-08",
+          "url": "https://www.loc.gov/resource/sn83025060/1906-02-08/ed-1/?sp=8&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:okhi:batch_okhi_beaver_ver01:data:sn83025060:00237281457:1906020801:0411/full/pct:6.25/0/default.jpg#h=409&w=285",
+          "paper": "the muskogee cimeter (muskogee, indian territory, okla.) 1901-19??",
+          "city": "muskogee",
+          "state": "oklahoma",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "SIIWg9WlBireUJBtMIW no JKMEAWBHH1 JRuMTTJSSlK i3JaS2ali4te W f p 1 t v w ft Hi M Patent for Perpetual Motion Perpetual motion almost for noth ing 1ms just been patented by a Chi cago man Carl August Sahlenberg received from Commissioner of Pat ents F L Allen laat week tho grant of his patent which bears tho date of Jan 2 190C and tho num ber 808G88 Tho particular schomo by which Sahlborg thinks ho can secure per potual motion is a wavo motor It consists as shown In tho accompany ing picture principally of a pier with a paddlo wheel at tho end It is the duty of the waves to beat against this paddle wheel and make it paddle In order to prevent tho waves from shirking that duty tho wily Inventor has fixed tho paddlo wheel on sliding supports so that It can bo raised or lowered to meet any whim of tho tide Tho pier can also bo turned In nny direction so that tho waves cannot successfully exe",
+          "lccn": "sn83025060",
+          "page": "8"
+        },
+        {
+          "id": "sn83032041-1891-07-03-ed-1-0132",
+          "title": "Image 1 of The Cambria freeman (Ebensburg, Pa.), July 3, 1891",
+          "date": "1891-07-03",
+          "url": "https://www.loc.gov/resource/sn83032041/1891-07-03/ed-1/?sp=1&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_kern_ver01:data:sn83032041:00212477746:1891070301:0132/full/pct:3.125/0/default.jpg#h=272&w=231",
+          "paper": "the cambria freeman (ebensburg, pa.) 1867-1938",
+          "city": "ebensburg",
+          "state": "pennsylvania",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "u Cnmbrin 1Veeiiini I rutHalted ffcl at BUKNSIUIM IMNNA BY JAMES U HS0 Toe lrresnd rel able rtrrultctt of tie itftiA KfKKiiit pu dhii It to tVe i t coot Merit Hri f sitfrrtu r vbi li x1 1 inserted at tic llluwIrK low rust 1 luh 3 Mint I 1 lorn 3 month 1 Inch t iLomtif 1 lrcn I xr 2 lrftr C mllth f S Inrhee I year jBr1 1iiOO 8 inches t uioctht l Indies 1 yesr I ia oc 4 W sLHSCklPriOS HATtS UeiftinD 6 nvmtns eiuuaM raootbi e egrun I tn ft 60 ta oopTi V if Dt uaui wiitiln luootha 174 d0 in tl not wM within e months t00 5 So if not ialu within the year i Je Mriis restum outside of lb county OTHSSSiI er year wU b charged to m no eonsult tneir oliitn 6 feonttis 1 cduuin I j 3 ir HjIuk Itern ff inf l it JJ l suieqeot lnertln S per loe A I u ar r uu Ejfuan i j0 r A a iors Soile StmT o I slulai N i o eiijiitiorji or ve it k 11 au ptii t j if illl Hllil",
+          "lccn": "sn83032041",
+          "page": "1"
+        },
+        {
+          "id": "sn84036012-1891-04-29-ed-1-1022",
+          "title": "Image 7 of The Anaconda standard (Anaconda, Mont.), April 29, 1891",
+          "date": "1891-04-29",
+          "url": "https://www.loc.gov/resource/sn84036012/1891-04-29/ed-1/?sp=7&q=perpetual+motion",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_cutthroat_ver01:data:sn84036012:00294550574:1891042901:1022/full/pct:6.25/0/default.jpg#h=393&w=275",
+          "paper": "the anaconda standard (anaconda, mont.) 1889-1970",
+          "city": "anaconda",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "theanaconda standard wednesday morning april 29 1891 THESPORT OF MEXICO Hoia Young Man Rises to die Gloryof a Matador A PROFITABLE PROFESSION BullFightersWho Have Made Fortunes by Risking Their Liven The Awful Death of Solerythe Famous Banderlllo CE Gnmales a member of one of themust prominent families of Mexico andone of the city council of Chihuahua isnow in thin city and in conversation yesterday concerning bull lictuing in his native country said Itis Mill a great spurt but it is gradually dying out In some states it haslieeu forbidden altogether It will go onlens frequently perhaps but it is a sportwhich the Mexicans love loo well to liepermitted to die out altogether Heineaskeil to give an idea of a bulltight in all its details Mr Gomales replied to a San Francisco BMMMM reporter Wellthe president of the city councilwhere the exhibition is to In given appoints a member of the counc",
+          "lccn": "sn84036012",
+          "page": "7"
+        }
+      ],
+      "sourceUrl": "https://www.loc.gov/collections/chronicling-america/?fo=json&c=12&sp=1&st=gallery&dl=page&searchType=advanced&qs=perpetual+motion&ops=PHRASE&start_date=1800-01-01&end_date=1930-12-31",
+      "sourceSha256": "e1470c001f5e61caac225c20a333da6fd07b1ccd842d471e3ba3116232617e28"
+    },
+    {
+      "id": "signals",
+      "query": "wireless telegraph",
+      "operator": "PHRASE",
+      "fromYear": 1800,
+      "toYear": 1930,
+      "total": 10267,
+      "records": [
+        {
+          "id": "sn83025316-1910-01-30-ed-1-1136",
+          "title": "Image 15 of The Daily Missoulian (Missoula, Mont.), January 30, 1910, (Morning)",
+          "date": "1910-01-30",
+          "url": "https://www.loc.gov/resource/sn83025316/1910-01-30/ed-1/?sp=15&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_flyingsquirrel_ver02:data:sn83025316:00294554634:1910013001:1136/full/pct:6.25/0/default.jpg#h=423&w=331",
+          "paper": "the daily missoulian (missoula, mont.) 1904-1961",
+          "city": "missoula",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "11 wryD 0 ýI i San Francisco Receives the Marathon FROM LEFT TO RIGHT DORANDO HENRY ST YVES JOHN J HAYES San Francisco Jan 29January will see the moat important Marathon rac ing in the history of the west when Dorando who is now in San Francisco meets Johnny Hayes in a special dual race Excellent inducements to make the trip were received by Durando end It Is rumOred he may meet Henry St Yves in Portland or Seattle in case of a victory over Hayes Hayes since his slump last year has been working faithfully It is claimed by those who have watched him at work that he is in as good condition as when he won the Olympian Marathon race and a great battle is looked for Champions of Two Colors JOHNSON AND JEFFRIES FROM THEIR LATEST PHOTOGRAPHS By Oscar H Morris When a man has been in the boxing game for 30 years and has turned out champions he is in a position to know something about the men and ",
+          "lccn": "sn83025316",
+          "page": "15"
+        },
+        {
+          "id": "sn87065167-1909-09-01-ed-1-0020",
+          "title": "Image 8 of The Hattiesburg news (Hattiesburg, Miss.), September 1, 1909",
+          "date": "1909-09-01",
+          "url": "https://www.loc.gov/resource/sn87065167/1909-09-01/ed-1/?sp=8&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_gabardine_ver01:data:sn87065167:0019991683A:1909090101:0020/full/pct:6.25/0/default.jpg#h=380&w=300",
+          "paper": "the hattiesburg news (hattiesburg, miss.) 1908-1917",
+          "city": "hattiesburg",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "ft Suppose Kf YOU I 3 T I il yy f m L lj Mm I 9 4tt m 7 r PM i vt v M W24C rM Are you protected against sickness business mistakes being otu of employment The way to be absolutely sure is to save money Save all you can SAVE IT NOW Wb le fortune is smiling on you come and open that savings account today We wil pay you 4 per cent interest on the money you put in our bank and compound the interest every siv months Hattiesburg Trust Banking Company CAPITAL 15000000 H A CAMP Pres JOE SHELBY Vice Pro VO HAMPER 2a ViceVre 1 R L BEVNETT Active ViccPrc 5 LOVE Cahkr J I J y THE NEW YORK STUDIO MAN will come to your home and do any kind of photograph work you wish done Cum berland Phone 741 C A Careful Drugj Buyers Read This It tells a clear story to any in tdligent man We save hundreds of dollars yearly in rent by being a lew steps from a comer Still our store is in rents a prominent location as w",
+          "lccn": "sn87065167",
+          "page": "8"
+        },
+        {
+          "id": "sn87065501-1906-08-18-ed-1-1127",
+          "title": "Image 2 of Water Valley progress (Water Valley, Miss.), August 18, 1906",
+          "date": "1906-08-18",
+          "url": "https://www.loc.gov/resource/sn87065501/1906-08-18/ed-1/?sp=2&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_garnet_ver01:data:sn87065501:00383344499:1906081801:1127/full/pct:6.25/0/default.jpg#h=468&w=313",
+          "paper": "water valley progress (water valley, miss.) 1882-1918",
+          "city": "water valley",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE ACCESSORIES OF THE WELLMAN POLAR EXPEDITION Some of the Wonders of Science That Are to Be Used in the Attempt to Reach the Pole What may be called the accessories of the equipment of the Wellman iolar expedition are by no means least in point of interest in the novel undertaking to reach the north pole In an airship The way in which the explorer has utilized the latest sci entific discoveries and inventions in his coming battle with the elements of the north form one of the most Interesting chapters in the story of preparation With the exception of the airship itself the wireless tele graph and the motor sledge or as Mr Wellman calls it the mechanical dog stand out as of peculiar interest Should Mr Wellman and bis com panions be successful in reaching the pole the wireless telegraph instrument Is expected to inform the world of the act of placing the American flag on that important p",
+          "lccn": "sn87065501",
+          "page": "2"
+        },
+        {
+          "id": "sn87065195-1906-08-03-ed-1-1127",
+          "title": "Image 2 of Times-promoter (Hernando, DeSoto County, Miss.), August 3, 1906",
+          "date": "1906-08-03",
+          "url": "https://www.loc.gov/resource/sn87065195/1906-08-03/ed-1/?sp=2&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_eyelet_ver02:data:sn87065195:00199917201:1906080301:1127/full/pct:6.25/0/default.jpg#h=463&w=285",
+          "paper": "times-promoter (hernando, desoto county, miss.) 1898-1970",
+          "city": "hernando",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE ACCESSORIES OF THE WELLMAN POLAR EXPEDITION Some of the Wonders of Science That Are to Be Used in the Attempt to Reach the Pole What may be called the accessories of the equipment of the Wellman polar expedition are by no means least in point of interest in the novel undertaking to reach the north pole in an airship The way in which the explorer has utilized the latest sci entific discoveries and inventions in his coming battle with the elements of the north form one of the most interesting chapters in the story of preparation With the exception of the airship Itself the wireless tele graph and the motor sledge or as Mr Wellman calls it the mechanical dog stand out as of peculiar interest Should Mr Wellman and bis com panions be successful in reaching the pole the wireless telegraph instrument is expected to inform the world of the act of placing the American flag that important poin",
+          "lccn": "sn87065195",
+          "page": "2"
+        },
+        {
+          "id": "sn87065612-1906-08-03-ed-1-0078",
+          "title": "Image 6 of The Starkville news (Starkville, Miss.), August 3, 1906",
+          "date": "1906-08-03",
+          "url": "https://www.loc.gov/resource/sn87065612/1906-08-03/ed-1/?sp=6&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_bamboo_ver01:data:sn87065612:00199916464:1906080301:0078/full/pct:3.125/0/default.jpg#h=316&w=211",
+          "paper": "the starkville news (starkville, miss.) 1902-1960",
+          "city": "starkville",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "The Starkvillc News PCBLISIIED WEEKLY ftTARKVILLBI 4 MISSISSIPPI NEWS OF THE WEEK AN EPITOME OF THE MOST IM PORTANT EVENTS AT HOME AND ABROAD NORTH ERST WEST SOUTH A Carefully Digested and Condensed Compilation of Current News Items Domestic and Foreign SITUATION IN RUSSIA Stronghanded reform is laid down by M Stolypin the Russian premier as the keynote of his admin istration Premier Stolypin says that the rea son the members of the late parlia ment who signed the Viborg manifesto were not arrested was because it would have conferred a mild and muchdesired martydom on them The question of a general strike hangs fire from various causes The peasantry in the famine district it is asserted would resent the tying up of the railroads upon which they de pend for grain to keep them from starvation The pofice of St Petersburg and Moscow are Decoming active in break ing up meetings and making dom",
+          "lccn": "sn87065612",
+          "page": "6"
+        },
+        {
+          "id": "sn84036220-1907-09-17-ed-1-0315",
+          "title": "Image 4 of Fergus County Democrat (Lewistown, Mont.), September 17, 1907",
+          "date": "1907-09-17",
+          "url": "https://www.loc.gov/resource/sn84036220/1907-09-17/ed-1/?sp=4&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_egret_ver02:data:sn84036220:00295861009:1907091701:0315/full/pct:6.25/0/default.jpg#h=446&w=313",
+          "paper": "fergus county democrat (lewistown, mont.) 1904-1919",
+          "city": "lewistown",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "Warm Blankets 65c A splendid double cot ton blanket to use in place of a sheet Easily washed and very dur able A change from the cold muslin sheet that will be greatly appreciated CRn Price each Uuli We are splendidly ready to fill all your fall requirements Stocks are com plete in all lines Hosiery Underwear Ready to Wear Gar ments Furs Millinery Mens Glothing Shoes Blankets and Bedding In short anything to wear can be found at HARTS Quality just a little better and prices just a little more attractive Tistrue Outing Flannels 8 l3c Soft finished outing flannels 27 inches wide and in both dark and light colors A flannel that other stores ad vertise as a special at 10c yard Harts will sell it at Qlh per yard 0all we do not carry accounts BUT THATS WHY WE CAN SELL CHEAPER We have no losses to make up We are directly connected with 57 of the largest department stores throughout the west and",
+          "lccn": "sn84036220",
+          "page": "4"
+        },
+        {
+          "id": "sn85034248-1906-08-18-ed-1-0422",
+          "title": "Image 7 of The Donaldsonville chief (Donaldsonville, La.), August 18, 1906",
+          "date": "1906-08-18",
+          "url": "https://www.loc.gov/resource/sn85034248/1906-08-18/ed-1/?sp=7&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_bolivar_ver01:data:sn85034248:00200299413:1906081801:0422/full/pct:6.25/0/default.jpg#h=505&w=372",
+          "paper": "the donaldsonville chief (donaldsonville, la.) 1871-current",
+          "city": "donaldsonville",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE ACCESSORIES OF THE WELLMAN POLAR EXPEDITION Sote of the Wonders of Science That Are to Be Used in the Attempt to Reach the Pole in the Attempt to What may be called the accessories of the equipment of the Wellman polar expedition are by no means least in point of interest in the novel undertakihg to reach the north pole In an airship The way in which the explorer has utilized the latest sci htific discoveries and inventions in his coming battle with the elements of the north form one of the most interesting chapters in the story of preparation With the exception of the airship itself the wireless tele graph and the motor sledge or as Mr Wellman calls it the mechanical dog stand out as of peculiar interest Should Mr Wellman and his com panions be successful in reaching the pole the wireless telegraph instrument is expected to inform the world of the act of placing the American flag on",
+          "lccn": "sn85034248",
+          "page": "7"
+        },
+        {
+          "id": "sn88064176-1906-09-15-ed-1-0398",
+          "title": "Image 6 of The Colfax chronicle (Colfax, Grant Parish, La.), September 15, 1906",
+          "date": "1906-09-15",
+          "url": "https://www.loc.gov/resource/sn88064176/1906-09-15/ed-1/?sp=6&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_magneto_ver01:data:sn88064176:00280761904:1906091501:0398/full/pct:6.25/0/default.jpg#h=491&w=357",
+          "paper": "the colfax chronicle (colfax, grant parish, la.) 1877-1981",
+          "city": "colfax",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "The Chronicle The arial ef hr rlJhn Noer A writer in the Critic has discovered why the author of that oldtime fa vorite of the school readers The Burial of Sir John Moore never suc ceeded in writing any other poem which was considered worth printing It appears that The Burial of Sir John Moore is nothing but a transla tion from the French of a poem by LallyTollendal an officer of the French army who wrote the poem after the death of a fellow soldier Hers are two stanzas from the French poem Ni Is son de tambour ni la marche funebre Ni Is feu des soidats ne marqua son depart Mal du brave a la hate a travers lee tenebres Mornes nous portanles le ca davre au rempart De apinult cetait lheure et solitaire et sombre La lune a peine offrait un debile rayon La lanterne luisalt peniblement dans rombre Quand de sla balonnette on creusa le gason The opening stanzas of The Burial of Sir John Moore a",
+          "lccn": "sn88064176",
+          "page": "6"
+        },
+        {
+          "id": "sn86075089-1912-01-11-ed-1-0435",
+          "title": "Image 5 of The Whitefish pilot (Whitefish, Mont.), January 11, 1912",
+          "date": "1912-01-11",
+          "url": "https://www.loc.gov/resource/sn86075089/1912-01-11/ed-1/?sp=5&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_fox_ver01:data:sn86075089:00295860984:1912011101:0435/full/pct:6.25/0/default.jpg#h=448&w=320",
+          "paper": "the whitefish pilot (whitefish, mont.) 1904-current",
+          "city": "whitefish",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "It Ult Bf HIO EFFECT M H At 1201 oclock next Sunday morning the Great Northern will put into effect a new timetable which will effect No 27 the fast mailthe uoBtand will change the time on No 44 one hour later Thla change will lengthen out the time on 27 considerably between her and the coast On account of the danger of broken rails In cold weath er and the difficulty of getting thru the snow bound prairies it has been thought best by the officials yo lengthen out thetime a little After next Sunday it will arrive here at 146 p m Instead of 1116 a m The time of No 4 Is to be short ened up and Assistant Superintend ent Carswell went to Spokane the fore part of the week to help ar range the new schedule over the di vision It is possible that the time of No 4 will also be changed next 8unday If it is it will arrive here around 6 oclock in the morning The train and engine crews on the oast en",
+          "lccn": "sn86075089",
+          "page": "5"
+        },
+        {
+          "id": "sn84020274-1903-11-15-ed-1-0337",
+          "title": "Image 34 of The St. Louis Republic (St. Louis, Mo.), November 15, 1903, (PART III)",
+          "date": "1903-11-15",
+          "url": "https://www.loc.gov/resource/sn84020274/1903-11-15/ed-1/?sp=34&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mohi:batch_mohi_ingalls_ver01:data:sn84020274:00294559668:1903111501:0337/full/pct:6.25/0/default.jpg#h=436&w=308",
+          "paper": "the st. louis republic (st. louis, mo.) 1888-1919",
+          "city": "saint louis",
+          "state": "missouri",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "HBH3R5GisScsaiiK5iEJWMW wpawpig i u wnLummiiiii5ai utjnHi jju fjjmuMjBiwii ptel t 3 THE REPUBLIC SUNDAY NOVEMBER 15 1903 Iff I ELEGRAP f 6 IF IS OIF lSflEHXOa en BjH W V HIV i re ili is r If I t1 KSk If la st l I IP I r 5 lit f Ci ik PJi i V sSlS h r ir v72 i 5A J THE SAFEST and Promises io Be THE MO The Marconi System has the very great advantage of primary and ample patents the same as the Bell Telephone 3 The consulting engineers of the Company are llflll Bill 1191 III 11111 The Company is managed and supported by leading business men and bankers whose aim is to take advantage of the great opportunities afforded for the successful introduction and operation of this the most important and useful discovery of all time Telegrams are arcopted at the otliees of the Marconi v Company and nNo at any ofllceor the POSTAL TELEGKAPII AND CA 111 V COMPVXIKS for transmission via tlie Companys Shor",
+          "lccn": "sn84020274",
+          "page": "34"
+        },
+        {
+          "id": "sn87090131-1914-12-25-ed-1-0455",
+          "title": "Image 1 of Tensas gazette (St. Joseph, La.), December 25, 1914",
+          "date": "1914-12-25",
+          "url": "https://www.loc.gov/resource/sn87090131/1914-12-25/ed-1/?sp=1&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_roulette_ver01:data:sn87090131:00200299772:1914122501:0455/full/pct:6.25/0/default.jpg#h=504&w=354",
+          "paper": "tensas gazette (st. joseph, la.) 1886-current",
+          "city": "saint joseph",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "STHE TENSAS GAZETTE rMa p lCpn y ltd Official Pp e r o th Pioi T i Sel Berd n F uis Lem Dirid rEW ERIESOL XXV ST JOSEPH LOUISIAA FRIDAY DECEMBER 25 1914lM 1 W w 7 77 7 4 1 B 4Q3IR tZeavz XI p HE war correspondents of 1898 wrote columns of matter about the heroes of Santiago who climbed on the embankments in front of the fighting men and wigwagged sig nals to the fleet on the other side of the enemy Wigwag went the flags by day S spelling out orders and informa otin and wigwag went the lanterns by night spelling out more Informa tion and orders In fact wigwag giag was about the only method of tassI5 with the friends on the other side atl1 asear g pfiesms have been used from time Im sad they also were used at Santiago v a dferesnt condition exists As the Ger l veIs sweeping down on Paris the operator Iswer whispered through the very air the WIar breathing to convey information to or Petrog",
+          "lccn": "sn87090131",
+          "page": "1"
+        },
+        {
+          "id": "sn87065632-1906-03-30-ed-1-0167",
+          "title": "Image 2 of The Tupelo journal (Tupelo, Miss.), March 30, 1906",
+          "date": "1906-03-30",
+          "url": "https://www.loc.gov/resource/sn87065632/1906-03-30/ed-1/?sp=2&q=wireless+telegraph",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_chert_ver01:data:sn87065632:00383343902:1906033001:0167/full/pct:6.25/0/default.jpg#h=503&w=362",
+          "paper": "the tupelo journal (tupelo, miss.) 1876-1924",
+          "city": "tupelo",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "The Tupelo Journal Published Weekly i TUPELO MISSISSIPPI The total length of railways In Ja pan is now over 4500 miles Th gauge is three feet six inches Such a variety of races is repra sented by the inhabitants of the Phil Ippines that 31 languages are spoke there Ninety per cent of the women wh Inhabit the capital of Morocco ar divorces A recent census shows tha of the 48000 women in Fez there ar only 4800 who are not divorced There are in America today mon than two hundred fraternal beneflcia orders with a combined membershi of over five million who are pro tec ted to the extent of about seve billion five hundred million dollars amd have distributed benefits to dls abled members amounting to mor than eight hundred and twentyflv million dollars There will be 25000 John Smiths 1 the next Chicago city directory Th striking printers voted the other da to compel every labor union man ii th",
+          "lccn": "sn87065632",
+          "page": "2"
+        }
+      ],
+      "sourceUrl": "https://www.loc.gov/collections/chronicling-america/?fo=json&c=12&sp=1&st=gallery&dl=page&searchType=advanced&qs=wireless+telegraph&ops=PHRASE&start_date=1800-01-01&end_date=1930-12-31",
+      "sourceSha256": "40cc7d9e318a5aca8cb79812f0894be6c74c931bfd0c47fe9e7b322dfbb91eeb"
+    },
+    {
+      "id": "sea",
+      "query": "sea serpent",
+      "operator": "PHRASE",
+      "fromYear": 1800,
+      "toYear": 1930,
+      "total": 3643,
+      "records": [
+        {
+          "id": "sn88064384-1913-11-01-ed-1-0368",
+          "title": "Image 2 of The St. Mary banner (Franklin, Parish of St. Mary, La.), November 1, 1913",
+          "date": "1913-11-01",
+          "url": "https://www.loc.gov/resource/sn88064384/1913-11-01/ed-1/?sp=2&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_kadabra_ver01:data:sn88064384:00295873875:1913110101:0368/full/pct:6.25/0/default.jpg#h=443&w=273",
+          "paper": "the st. mary banner (franklin, parish of st. mary, la.) 1889-1931",
+          "city": "franklin",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "ERPE LD AS ANTA CLAUS I O many hoaxes dealing with the sea serpent have been played by imagina tive travelers who have described and sketched the modern saurian that the very name of the brute avoided by all but the brave To say that you have seen the sea serpent is to put with your own tongue a blot on your own character Skip pers who have beheld the monster have made no entry of the fact in their log book lest they be derided when their vessels are snug in port Naturalists have hemmed and hawed in their writings regarding it Poets have been reticent upon the theme all except John Milton whose remarks upon Leviathan in Paradise Lost have been construed by a modern au ftiority to mean Sea Serpent pure and simple For a century the scientific world has looked at sea serpents askance And yet there is one professional field in life who members have sup plied more data concerning sea ser pent",
+          "lccn": "sn88064384",
+          "page": "2"
+        },
+        {
+          "id": "sn88064057-1913-09-27-ed-1-0249",
+          "title": "Image 2 of Abbeville progress (Abbeville, Vermilion Parish, La.), September 27, 1913",
+          "date": "1913-09-27",
+          "url": "https://www.loc.gov/resource/sn88064057/1913-09-27/ed-1/?sp=2&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_karma_ver01:data:sn88064057:00280761734:1913092701:0249/full/pct:6.25/0/default.jpg#h=502&w=363",
+          "paper": "abbeville progress (abbeville, vermilion parish, la.) 1913-1944",
+          "city": "abbeville",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "U iW2S VWONDERFUL LANU brut To ther hcrs w Ii ha v iri S11 Full Dress Costume of the Children to of Mr Roses Home Land of tiuhs oluntry nd Is at the h l cull eigh siha fanl Are s rutus have told me that tile they io d lindia more than iany iea ether ctountry hI continued I can of sot understaal it for I look upon this Xia country as thie mnost riemarkabl na dot tion on earth If I were to select a de place to live I should pick Washing Re ton ac the most delightful tityv It is nii far more beautiful cleaner and more de Interesting than any city I have vis est lted in this country and as for Eu Ne rope there Is no city that can comi pare with it Itombay and Calcutta wo the two principal cities of India are set exceedingly interesting and curious I scI have no doubt I was born in liom to bay Sly father was a Hlindu and my ga mother an American of ScotchIrish Pl parentage When I was a boy I ",
+          "lccn": "sn88064057",
+          "page": "2"
+        },
+        {
+          "id": "sn85053057-1899-03-11-ed-1-0580",
+          "title": "Image 15 of Daily inter mountain (Butte, Mont.), March 11, 1899",
+          "date": "1899-03-11",
+          "url": "https://www.loc.gov/resource/sn85053057/1899-03-11/ed-1/?sp=15&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_jewelwing_ver01:data:sn85053057:00295860248:1899031101:0580/full/pct:6.25/0/default.jpg#h=432&w=330",
+          "paper": "daily inter mountain (butte, mont.) 1881-1901",
+          "city": "butte",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "THE ASTONISHING RECORD OF A PUGILIST WHO HAS KNOCKED OUT MORE THAN THREE HUNDRED MENHE HAS PROM ISED US A NEW BLOW Robert Fitzsimmons has the battle of his life before him He thought lie hatl fought it when he knocked out Corbett on St Patricks day 1S97 in Carson City But now a youngerand some say clevererman than Corbett is to face Fitz and he and his wife and the public feel that there is to be a crisis Fitzsimimons knowing Ute task that is before him will as usual be trained to the hour Although Fitz is a scientific phenomenon in the pugilistic sphere ha trains exactly opposite to the way he fights There is no rougher trainer among m i m n ROUGHING IT WITH ONE OF HIS TRAINERS fighters than Fitzsimmons He likes to rough it wrestle and strain all his mus cles and it is this work that has enabled him to receive several good cracks on the jaw without fazing him Bob has al ready started in",
+          "lccn": "sn85053057",
+          "page": "15"
+        },
+        {
+          "id": "sn85034235-1914-10-15-ed-1-0170",
+          "title": "Image 1 of The Bossier banner (Bellevue, Bossier Parish, La.), October 15, 1914",
+          "date": "1914-10-15",
+          "url": "https://www.loc.gov/resource/sn85034235/1914-10-15/ed-1/?sp=1&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:lu:batch_lu_ninetails_ver01:data:sn85034235:00295874648:1914101501:0170/full/pct:3.125/0/default.jpg#h=259&w=184",
+          "paper": "the bossier banner (bellevue, bossier parish, la.) 1859-1952",
+          "city": "benton",
+          "state": "louisiana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "Established July I 1859 fiftythird year THE BOSSIER BANNER A Map of Busy Life Its Fluctuations and Its Vast Concerns Subscription 1 per Year BENTON BOSSIER PARISH LA THURSDAY OCTOBER 15 1914 NUMBER 42 Order Your Drugs by Parcel Post From our store where you have the largest drug stock in Louisiana always ready to meet your de mands Mail orders have individual attention which assures you the same care and selection as you have when shopping in person Remember our schedule of prices when making up your orders Our Prices Every Day in the Year 1 articles 3 cents 50 cent articles ___38 cents 25 cent articles 19 cents SÊTSend cash with your order and it will be filled by return mail Any difference in price or postage will be returned should you send too much ThL ORICINAL CUTRATL ORURÖTORR Both Telephones 637 Corner Texas and Market Streets 9903030300330333003080003 GQ30Q03Q30C00Q0QQ00QQ00QQ0 S",
+          "lccn": "sn85034235",
+          "page": "1"
+        },
+        {
+          "id": "sn82014248-1901-12-02-ed-1-0542",
+          "title": "Image 4 of Daily Kennebec journal (Augusta, Me.), December 2, 1901",
+          "date": "1901-12-02",
+          "url": "https://www.loc.gov/resource/sn82014248/1901-12-02/ed-1/?sp=4&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:me:batch_me_jackman_ver02:data:sn82014248:00514156116:1901120201:0542/full/pct:6.25/0/default.jpg#h=440&w=331",
+          "paper": "daily kennebec journal (augusta, me.) 1870-1975 [microfilm reel]",
+          "city": "augusta",
+          "state": "maine",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "pailv ltmnebes Ioumal TERMS T rKR EAR taken fto notice whatever will b unsigned communications The journal cannot be held respon sible for the preservation or return ot rejected communications Address nil rommnnleatlons relating to subscriptions and advertlsments to BURLKIGH KLTNT Publishers August a Maine _ Th turkey jokes arc now lail away until juioio y ar much to the relief 1 lit U lhMv will b disgusted Kiunts nui Uflv war whoops on the reservations when the fat and lazy Lo heats of this proposition haL hi work for his living like other people Tnless the Democrats get together throughout the Nation state and city ys Vr Croker wo have no chance for years come They have been petting together all right but the trouble has been that it was In the fashion of the two vats tied bv the tails and thrown over a clothes line Hut Mr Croker should not fret he has had his chance and will now live ",
+          "lccn": "sn82014248",
+          "page": "4"
+        },
+        {
+          "id": "sn83025308-1893-08-28-ed-1-0852",
+          "title": "Image 3 of The Helena independent (Helena, Mont.), August 28, 1893, (Morning)",
+          "date": "1893-08-28",
+          "url": "https://www.loc.gov/resource/sn83025308/1893-08-28/ed-1/?sp=3&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_kelseya_ver02:data:sn83025308:00212476687:1893082801:0852/full/pct:6.25/0/default.jpg#h=444&w=284",
+          "paper": "the helena independent (helena, mont.) 1875-1943",
+          "city": "helena",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "41 t t Saved Her Life Mrs O J Woot1nmns of Wortham Texas saved the life of her chill by the use of Ayers Cherry Pectoral One of my children had Croup The case was attended by our physician and wag sullpposed to bIe wnll lelldr Control Onre nsight I was startled by the childs hard breathin and on going to It found It atran gllng It hod nearly ceasedl to hreatlle Realizing that the clllls alarming eoullition had become possible in spite of the medielnes given I reasoned that nlch remedies would be of no avail Having Ipart of a bottle of Ayers Cherry PectoralIn ihe lhollne I gave tle child three doses at sllort Intervals ilid alxiously witled results IProm the Ibmoment the Pectoral was given the chlltls breatthing grow easier and In a short IIne s8te was lieptllng quelltly itl hirrailog naLturally Ttile ehl is alive lind well toilay and 1 do not hesitate tA say tlhat Ayers Cherry Poe toral ",
+          "lccn": "sn83025308",
+          "page": "3"
+        },
+        {
+          "id": "sn96090259-1914-02-13-ed-1-0889",
+          "title": "Image 3 of Hot Springs weekly star (Hot Springs, S.D.), February 13, 1914",
+          "date": "1914-02-13",
+          "url": "https://www.loc.gov/resource/sn96090259/1914-02-13/ed-1/?sp=3&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:sdhi:batch_sdhi_dagger_ver01:data:sn96090259:00415623227:1914021301:0889/full/pct:6.25/0/default.jpg#h=465&w=326",
+          "paper": "hot springs weekly star (hot springs, s.d.) 1892-1917",
+          "city": "hot springs",
+          "state": "south dakota",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "Remarkable Progress In Porto Rico Indicated by Report W HEN our troops lauded In Por to Rico in 1808 that island was practically unknown to the American public and at that time the most optimistic could not have anticipated the spontaneous de velopment which has actually taken place in the last fifteen years This development industrial educational and otherwise is shown in an inter esting volume issued by the bureau of Insular affairs containing the reports of the governor and other officials for the fiscal year 1913 This report shows that since 1901 the total external commerce of the island has increased some fivefold in round numbers the exports growing from eight and half to fortynine millions the imports from less than nine to nearly thirtyseven millions while the balance of trade adverse in 1001 by a small amount is now more than twelve millions annually in its favor The is land dur",
+          "lccn": "sn96090259",
+          "page": "3"
+        },
+        {
+          "id": "sn83016025-1894-01-31-ed-1-0010",
+          "title": "Image 4 of The Portland daily press (Portland, Me.), January 31, 1894",
+          "date": "1894-01-31",
+          "url": "https://www.loc.gov/resource/sn83016025/1894-01-31/ed-1/?sp=4&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:me:batch_me_halfwayrock_ver01:data:sn83016025:00414210843:1894013101:0010/full/pct:6.25/0/default.jpg#h=409&w=317",
+          "paper": "the portland daily press (portland, me.) 1862-1921",
+          "city": "portland",
+          "state": "maine",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "PORTLAND DAILY PRESS AND MAINE STATE PRESS Subscription Rates Daily In advance 6 per year S3 for si months 150 a quarter 50 cents a mouth The Daily is delivered every morning bj carrier anywhere within the city limits aud a VVoodfords without extra charge Daily Notin advance invariably at the rate of 7 a year Maine State Press Weekly published every Thursday 2 per year 1 for six months 50 cents a quarter 25 cents for trial subscrip tion of six weeks Persons wishing to leave town for long or short periods may Have the address of then paper changed as often as desired Advertising Rates In Daily Press 150 per square first week 75 cents per week after Three tnsei tions or less 100 per square Every other day advertisements one third less than these Half square advertisements 100 pet w eek Prst week half price each succeeding week A Square is a space of the width of a col umn and one inch long",
+          "lccn": "sn83016025",
+          "page": "4"
+        },
+        {
+          "id": "sn87065165-1903-12-02-ed-1-0327",
+          "title": "Image 6 of Hattiesburg daily progress (Hattiesburg, Miss.), December 2, 1903",
+          "date": "1903-12-02",
+          "url": "https://www.loc.gov/resource/sn87065165/1903-12-02/ed-1/?sp=6&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:msar:batch_msar_gabardine_ver01:data:sn87065165:00199916762:1903120201:0327/full/pct:3.125/0/default.jpg#h=280&w=212",
+          "paper": "hattiesburg daily progress (hattiesburg, miss.) 18??-1909",
+          "city": "hattiesburg",
+          "state": "mississippi",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "m TO ft v a New York CityBlouse waists make the favorite models of the sea son aud are worn both for indoor and street costume This May Manton In i S f i 7 Y r A AJ Pi x Hr M lV iupSl VS Tl i r y_V i 7 i is BLOUSE WAIST hides pleats at the shoulders that give the fashionable breadth and sleeves of the latest sort The model is made sf wood brown henrietta with velvet piped with white and ornamental but tons as trimming but the design suits almost all seasonable fabrics The sleeves with their big puffs at the wrists are specially worthy of con sideration as they lend themselves to remodelling with singular success The apper portions are not wider than those of last season and are simply shaped to fall over the full puffs The blouse is made over a fitted lin ing that closes at the com re front On this lining are arranged tin plain back and the pleated fronts that are faced A Late Design by ",
+          "lccn": "sn87065165",
+          "page": "6"
+        },
+        {
+          "id": "sn84036012-1899-01-20-ed-1-0272",
+          "title": "Image 11 of The Anaconda standard (Anaconda, Mont.), January 20, 1899, (Morning)",
+          "date": "1899-01-20",
+          "url": "https://www.loc.gov/resource/sn84036012/1899-01-20/ed-1/?sp=11&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_nuthatch_ver01:data:sn84036012:00212477254:1899012001:0272/full/pct:6.25/0/default.jpg#h=375&w=292",
+          "paper": "the anaconda standard (anaconda, mont.) 1889-1970",
+          "city": "anaconda",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "5 LYONSREPUTATjQ1 io Et Ott a gwImli an Inaqlande iS GIVEN A HARD NAME Mad to the ffeot Would Not Believe der OaithMoiton for a New Twial The reputation of Gregory M Lyons generally known in Butte as Cap Lyons is an important matter that just now cits a figure in the insurance case of Sainuel Mulville against the Pacific Mutual Life Insurance company of Califoraia and a half dozen affl davits weri filed in the district court yesterday in which the affianmt give Lyons vey hard name The suit was brought some years ago to recover on an apeldent insurance policy carried by Charles F Young who was killed by a Montana UrnThn train in April 1887 and on th second trial of the case which was held a few months ago M Mulville the administrator got a Judg ment for a big sum The defense to the action was that Young met his death through his own carelessness vwhile trying to get on a moving train Afte",
+          "lccn": "sn84036012",
+          "page": "11"
+        },
+        {
+          "id": "sn84038125-1896-07-31-ed-1-0804",
+          "title": "Image 2 of The new North-west (Deer Lodge, Mont.), July 31, 1896",
+          "date": "1896-07-31",
+          "url": "https://www.loc.gov/resource/sn84038125/1896-07-31/ed-1/?sp=2&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mthi:batch_mthi_lynx_ver01:data:sn84038125:00212477096:1896073101:0804/full/pct:6.25/0/default.jpg#h=359&w=243",
+          "paper": "the new north-west (deer lodge, mont.) 1869-1897",
+          "city": "deer lodge",
+          "state": "montana",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "IN THE PIONEER DAYS ItECOIICCTIONS OFL SPOKANE PlO NEERS OOF IS7 Cood and Bad Indians and Their Re lations With the Settlers The First Funeral Among the earliest ranch settlers in the vicinity of Spokane was the family of Rush Hotchkiss who came from Cali fornia with a colony of neighborsall formerly from Illinoisand settled in the neighborhood of Deep Creek some 17 years ago At that time there were only about a dozen white families in the county outside of the villages of Spo kane Medical Lake and Cheney As there was only at trail by the di rect route to their ranches tihe ladies preferred to travel on horseback lDuring the tirst winter of 1S7879 there was de p snow and little to be done but stay Being favored with the needful in tthe way of three violins and excellent L Mlit amuontg their colony it is ncPeless to say that they dancedr Early and oftin grave and gay old cnd young lit ins",
+          "lccn": "sn84038125",
+          "page": "2"
+        },
+        {
+          "id": "sn82014248-1903-07-22-ed-1-0166",
+          "title": "Image 6 of Daily Kennebec journal (Augusta, Me.), July 22, 1903",
+          "date": "1903-07-22",
+          "url": "https://www.loc.gov/resource/sn82014248/1903-07-22/ed-1/?sp=6&q=sea+serpent",
+          "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:me:batch_me_burdin_ver03:data:sn82014248:00513682487:1903072201:0166/full/pct:6.25/0/default.jpg#h=440&w=340",
+          "paper": "daily kennebec journal (augusta, me.) 1870-1975 [microfilm reel]",
+          "city": "augusta",
+          "state": "maine",
+          "language": [
+            "english"
+          ],
+          "ocrExcerpt": "A SEA SERPENT Causes a Reign of Terror Among Baysfde People No One Dares Fish or Swim in the St Croix River Monster Terrifies Everyone Who Be holds Its Ugly Form i St Andrews N B July 21A reign of terror exists among the good folk who inhabit the little village of Bay side They have seen the dreaded sea serpent head tall and fins No one will venture into the St Croix river either to swim or to fish and sev eral small cannon have been mounted and trained on the peaceful waters and with sharpeyed gunners readyto hurl shells at the monster of the deep should be again make his appearance TTnllke the majority of sea serpent ru imors the latest story can be corrobor ated by dozens of eyewitnesses Walter Greenlaw Is one of the best known fishermen in the village He is probably 40 years old and has been ail his i a total abstainer and is an elder of the quaint little Presbyterian church on the h",
+          "lccn": "sn82014248",
+          "page": "6"
+        }
+      ],
+      "sourceUrl": "https://www.loc.gov/collections/chronicling-america/?fo=json&c=12&sp=1&st=gallery&dl=page&searchType=advanced&qs=sea+serpent&ops=PHRASE&start_date=1800-01-01&end_date=1930-12-31",
+      "sourceSha256": "4ff7f9583a29ceb7b6332eeaaca1cd27890b01a3bf0704dad28515011901da04"
+    }
+  ]
+}
