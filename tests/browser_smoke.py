@@ -92,6 +92,32 @@ def main():
                 page.wait_for_function("document.getElementById('status').textContent.includes('Could not import')")
                 assert "Imported Halifax report" in page.locator(".record h3").inner_text()
                 assert "2 pages" in page.locator("#clipCount").inner_text()
+                shared_capture={"schemaVersion":1,"capturedAt":"2026-11-23T05:17:31Z","query":{"query":"wireless telegraph","operation":"PHRASE","start":"1900-01-01","end":"1900-12-31","city":"butte"},"provenance":{"url":"https://www.loc.gov/collections/chronicling-america/?qs=wireless+telegraph&ops=PHRASE&start_date=1900-01-01&end_date=1900-12-31"},"total":1,"records":[{"id":"shared-page","url":"https://www.loc.gov/resource/sn123/1900-02-10/ed-1/?sp=7","title":"Shared newspaper page","date":"1900-02-10","newspaper":"A paper","city":"Butte","excerpt":"wireless telegraph"}]}
+                manifest={"schema":"coolcode.newspaper-collection.v1","capturesUrl":"https://coolcode.ca/headlinevault/data/captures.json","papers":[{"lccn":"sn123"}],"geography":"Historical U.S. newspapers"}
+                page.route("https://coolcode.ca/headlinevault/data/newspapers.json",lambda route:route.fulfill(status=200,content_type="application/json",body=json.dumps(manifest)))
+                page.route("https://coolcode.ca/headlinevault/data/captures.json",lambda route:route.fulfill(status=200,content_type="application/json",body=json.dumps({"schemaVersion":1,"captures":{"new-topic":shared_capture}})))
+                page.locator("#sharedNewspapers summary").click()
+                page.locator("#loadShared").click()
+                page.locator("#useShared").wait_for()
+                page.locator("#useShared").click()
+                assert "Shared newspaper page" in page.locator("#results").inner_text()
+                assert "1900-01-01 to 1900-12-31" in page.locator("#topicDescription").inner_text()
+                assert "no fresh source request" in page.locator("#topicDescription").inner_text()
+                assert "city=butte" in page.locator("#sharedResearch").get_attribute("href")
+                page.locator(".save").first.click()
+                with page.expect_download() as shared_download:
+                    page.locator("#exportJSON").click()
+                receipt=json.loads(Path(shared_download.value.path()).read_text())
+                context=next(r["researchContext"]for r in receipt["records"]if r["id"]=="shared-page")
+                assert context["mode"]=="shared-headlinevault"
+                assert context["retrievedAt"]=="2026-11-23T05:17:31Z"
+                assert context["originalQuery"]["city"]=="butte"
+                page.unroute("https://coolcode.ca/headlinevault/data/newspapers.json")
+                page.route("https://coolcode.ca/headlinevault/data/newspapers.json",lambda route:route.fulfill(status=503,body="unavailable"))
+                page.locator("#loadShared").click()
+                page.wait_for_function("document.getElementById('sharedStatus').textContent.includes('Could not load')")
+                assert "Shared newspaper page" in page.locator("#results").inner_text()
+                assert "3 pages" in page.locator("#clipCount").inner_text()
                 page.screenshot(path=str(screenshots / "desktop.png"), full_page=True)
                 page.set_viewport_size({"width": 390, "height": 844})
                 assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")

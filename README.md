@@ -5,7 +5,7 @@ Real Library of Congress page scans, editable discovery topics, arbitrary live
 full-text queries, random page discovery and a downloadable source trail.
 
 <!-- coolcode:guide -->
-Choose a topic or search your own phrase, then open the original page to check the OCR and surrounding columns. Topic matches are historical reports, not verified events; save useful pages and export their source links. If a live request fails, import an official Library JSON response with its exact search URL; clippings stay usable and imports are clearly dated as imports.
+Choose a topic, reuse a retained Headline Vault newspaper search, or search your own phrase, then open the original page to check the OCR and surrounding columns. Topic matches are historical reports, not verified events; save useful pages and export their source links. If a live request fails, import an official Library JSON response with its exact search URL; clippings stay usable and imports are clearly dated as imports.
 <!-- /coolcode:guide -->
 
 ## Use it
@@ -23,6 +23,12 @@ research receipt or CSV source list. Nothing is automatically persisted across
 browser sessions. Images and explicit searches contact the Library of Congress.
 No query or saved page is sent to CoolCode; the shared aggregate counter records
 the tool ID only.
+
+## Shared newspaper collection
+
+Expand **Explore Headline Vault’s retained newspaper searches**, load the collection, choose a captured query and select **Read these captured pages**. This loads the published [collection manifest](https://coolcode.ca/headlinevault/data/newspapers.json) and [retained captures](https://coolcode.ca/headlinevault/data/captures.json) only on request. It makes no new Library of Congress API request and does not imply a fresh source check. Each search retains its exact original query, source URL and capture date. Saved clipping receipts include that provenance and `mode: shared-headlinevault`; publication dates remain the newspaper dates. Shared pages support filtering, shuffle, clippings and export. The Headline Vault link carries the same query and geography into its paper/date browser, without automatically submitting a search.
+
+The source is still historical **U.S. newspapers**, not a new Canadian newspaper collection. Unavailable or invalid shared data leaves the current shelf and saved clippings unchanged. `web/shared-collection.mjs` defines and validates the versioned contract and fixed CoolCode URLs. Add captures to Headline Vault through its documented workflow; new captures appear here on the next explicit load without editing this repository or running another collector. This does not change the existing weekly Old News Oddities collection schedule.
 
 ## Expand or customize
 
