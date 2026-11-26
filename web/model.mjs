@@ -70,7 +70,7 @@ export async function readLibraryResponse(response) {
 }
 export function searchError(error) {
   if(['TimeoutError','AbortError'].includes(error?.name))return 'The Library of Congress did not respond before the search timed out.';
-  if(error instanceof TypeError)return 'This browser could not read the Library of Congress response. A network, cross-site access or provider verification problem may be responsible; the browser does not expose the exact cause here.';
+  if(error instanceof TypeError)return 'This browser could not reach CoolCode’s newspaper search service. Check your connection and try again.';
   if(error instanceof SyntaxError)return 'The Library of Congress returned unreadable JSON instead of usable search results.';
   return error?.message||'The Library of Congress search could not be completed.';
 }
