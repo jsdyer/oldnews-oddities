@@ -1,3 +1,5 @@
+import {reviewedPages} from './verified-pages.mjs';
+
 // Compare only published excerpts and metadata. A saved capture with the same
 // phrase and operation also proves a hit when the OCR excerpt omits the phrase.
 const words = value => String(value || '').normalize('NFKC').toLowerCase().match(/[\p{L}\p{N}]+/gu) || [];
@@ -37,7 +39,10 @@ export function findSavedPages(captures, query) {
     for (const record of capture.records || []) {
       let url;
       try {url = new URL(record.url);} catch {continue;}
-      if (url.protocol !== 'https:' || !['www.loc.gov','loc.gov'].includes(url.host) || url.username || url.password) continue;
+      // Additional hosts are available only through our exact reviewed records.
+      const trustedReview = capture === reviewedPages && reviewedPages.records.includes(record);
+      if (url.protocol !== 'https:' || url.username || url.password) continue;
+      if (!trustedReview && !['www.loc.gov','loc.gov'].includes(url.host)) continue;
       // The same newspaper page can carry a different OCR-highlight term.
       url.searchParams.delete('q');
       const id = url.href;
@@ -55,18 +60,24 @@ export function findSavedPages(captures, query) {
   return {examined:corpus.size,matches:entries};
 }
 
-export function showSavedSearch(container, captures, query) {
-  const {examined, matches} = findSavedPages(captures, query);
+export function showSavedSearch(container, captures, query, showEmpty = true) {
+  const {examined, matches} = findSavedPages([...captures, reviewedPages], query);
+  if (!matches.length && !showEmpty) { container.hidden = true; return; }
   const heading = document.createElement('h3');
   heading.textContent = 'Matches in saved newspaper pages';
   const description = document.createElement('p');
-  description.textContent = `${matches.length} matches among ${examined} saved pages for ${query.query ? '“' + query.query + '”' : 'your filters'}. This checks retained search matches, titles, publication details and short OCR excerpts. The full archive may have more results.`;
+  description.textContent = `${matches.length} matches among ${examined} saved pages for ${query.query ? '“' + query.query + '”' : 'your filters'}. These saved matches come from retained search receipts and individually verified newspaper scans. The live archive has separate coverage.`;
   const list = document.createElement('ol');
   for (const {record, capturedAt} of matches) {
     const item = document.createElement('li'), link = document.createElement('a');
     link.textContent = record.title || 'Original newspaper page';
     link.href = record.url; link.target = '_blank'; link.rel = 'noopener';
     item.append(link,document.createTextNode(` · ${record.date || 'undated'} · saved ${String(capturedAt || '').slice(0,10) || 'date unknown'}`));
+    if (record.sourceLabel) {
+      const citation = document.createElement('p');
+      citation.textContent = record.sourceLabel + ' · “' + record.excerpt + '”';
+      item.append(citation);
+    }
     list.append(item);
   }
   container.replaceChildren(heading, description, list);

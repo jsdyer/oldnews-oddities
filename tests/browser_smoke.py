@@ -66,6 +66,8 @@ def main():
                 assert "1 page" in page.locator("#clipCount").inner_text()
                 assert page.locator("#saved-fallback").is_visible()
                 assert "saved pages" in page.locator("#saved-fallback").inner_text()
+                assert page.get_by_role("link",name="The Evening Post, front page").is_visible()
+                assert page.get_by_role("link",name="Morning Oregonian, front page").is_visible()
                 assert "qs=Halifax" in page.locator("#providerJSON").get_attribute("href")
                 assert page.locator("#importSource").input_value() == ""
                 page.locator("#copySource").click()

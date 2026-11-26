@@ -28,3 +28,15 @@ test('duplicate highlights do not inflate counts and an untrusted URL cannot bec
   assert.equal(found.matches.length,1);
   assert.equal(found.matches[0].capturedAt,capture.capturedAt);
 });
+
+import {reviewedPages} from '../web/verified-pages.mjs';
+test('individual archival citations match the Halifax request without enabling arbitrary archive URLs',()=>{
+ const req={query:'Halifax',operation:'PHRASE',start:'1800-01-01',end:'1930-12-31'};
+ const {matches}=findSavedPages([reviewedPages],req);
+ assert.equal(matches.length,4);
+ assert.ok(matches.every(({record})=>/halifax/i.test(record.excerpt) && record.sourceLabel));
+ assert.equal(findSavedPages([reviewedPages],{...req,end:'1917-12-06'}).matches.length,0);
+ assert.equal(findSavedPages([reviewedPages],{...req,city:'Medford'}).matches.length,1);
+ const imitation={...reviewedPages,records:[{...reviewedPages.records[0],url:'https://tile.loc.gov/some-other-path'}]};
+ assert.equal(findSavedPages([imitation],req).matches.length,0);
+});
