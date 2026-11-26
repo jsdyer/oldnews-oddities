@@ -13,7 +13,9 @@ export async function searchNewspapers(sourceUrl, signal) {
   });
   const isJSON = (response.headers.get('content-type') || '').includes('application/json');
   if (!response.ok) {
-    const message = isJSON ? (await response.json().catch(() => null))?.error?.message : null;
+    const issue = isJSON ? (await response.json().catch(() => null))?.error : null;
+    if (issue?.code === 'source_unavailable') throw new Error('The Library of Congress could not complete this live search.');
+    const message = issue?.message;
     throw new Error(typeof message === 'string' ? message : `Newspaper search returned HTTP ${response.status}. Try again later.`);
   }
   if (!isJSON) throw new Error('Newspaper search returned a web page instead of JSON.');

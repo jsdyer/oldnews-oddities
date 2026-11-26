@@ -30,7 +30,11 @@ class CollectorTests(unittest.TestCase):
         self.assertIsNone(safe_url('javascript:alert(1)'))
     def test_capture_covers_current_config(self):
         shelf=json.loads((ROOT/'web/data/shelf.json').read_text())
-        self.assertEqual([t['id'] for t in shelf['topics']],[t['id'] for t in self.config['topics']])
+        configured=[t['id'] for t in self.config['topics']]
+        watchlist=[t['id'] for t in json.loads((ROOT/'scripts/retained-watchlist.json').read_text())]
+        retained=[t['id'] for t in shelf['topics']]
+        self.assertEqual(retained[:len(configured)],configured)
+        self.assertTrue(all(t in watchlist for t in retained[len(configured):]))
         for t in shelf['topics']:
             self.assertEqual(len(t['sourceSha256']),64)
             self.assertTrue(t['records'])

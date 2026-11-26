@@ -1,0 +1,11 @@
+[
+  {
+    "id": "halifax",
+    "label": "Halifax in the American press",
+    "query": "halifax",
+    "operator": "PHRASE",
+    "fromYear": 1800,
+    "toYear": 1930,
+    "description": "Historical U.S. newspaper pages returned for the exact phrase Halifax, 1800\u20131930."
+  }
+]

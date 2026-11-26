@@ -64,6 +64,8 @@ def main():
                 page.wait_for_function("document.getElementById('status').textContent.includes('web page instead of JSON')")
                 assert page.locator(".record").count() == 1
                 assert "1 page" in page.locator("#clipCount").inner_text()
+                assert page.locator("#saved-fallback").is_visible()
+                assert "saved pages" in page.locator("#saved-fallback").inner_text()
                 assert "qs=Halifax" in page.locator("#providerJSON").get_attribute("href")
                 assert page.locator("#importSource").input_value() == ""
                 page.locator("#copySource").click()

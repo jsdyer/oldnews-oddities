@@ -69,12 +69,15 @@ def collect(root=ROOT, if_changed=False):
         print('Configuration unchanged; retaining current shelf.');return
     captured=datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z')
     topics=[]
-    for i,t in enumerate(config['topics']):
+    watchlist=root/'scripts/retained-watchlist.json'
+    extra=json.loads(watchlist.read_text()) if watchlist.exists() else []
+    all_topics=validate_config({**config,'topics':[*config['topics'],*extra]})['topics']
+    for i,t in enumerate(all_topics):
         if i: time.sleep(max(4,config.get('minimumRequestIntervalSeconds',4)))
         url=source_url(t,config['pageSize']); print('Collecting '+t['id'],flush=True)
         raw=read_loc(url,timeout=config['requestTimeoutSeconds'],limit=12_000_000,default_agent='CoolCode OldNewsOddities/1.0 (+https://coolcode.ca/oldnews-oddities/)')
         records,total=normalize_response(json.loads(raw))
-        topics.append({'id':t['id'],'query':t['query'],'operator':t['operator'],'fromYear':t['fromYear'],'toYear':t['toYear'],'total':total,'records':records,'sourceUrl':url,'sourceSha256':hashlib.sha256(raw).hexdigest()})
+        topics.append({'id':t['id'],'label':t['label'],'description':t['description'],'query':t['query'],'operator':t['operator'],'fromYear':t['fromYear'],'toYear':t['toYear'],'total':total,'records':records,'sourceUrl':url,'sourceSha256':hashlib.sha256(raw).hexdigest()})
         print(f'  {len(records)} pages; {total} search matches',flush=True)
     result={'schemaVersion':1,'capturedAt':captured,'configSha256':digest,'publisher':'Library of Congress / Chronicling America','topics':topics}
     dest.parent.mkdir(exist_ok=True)

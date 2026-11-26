@@ -156,3 +156,5 @@ After adding the secret, manually run the existing Pages workflow with **Refresh
 ## Searchable examples
 
 The offline build publishes selected saved searches as static pages with their own titles, original-scan citations and capture dates. Each page links to the complete tool with that capture already selected. The featured searches are declared in `scripts/topic_pages.py`.
+
+When the provider declines or delays a search, the tool checks the currently published saved pages for the same filters and terms. It shows these partial matches separately with their original capture dates. Halifax (exact phrase, 1800–1930) is queued for the next full collector refresh.
