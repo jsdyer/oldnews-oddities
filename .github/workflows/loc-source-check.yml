@@ -1,0 +1,19 @@
+name: Check Halifax search from approved archive client
+on:
+  push:
+    branches: [diagnose/loc-source-headers]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Compare approved Library of Congress search requests
+        env:
+          LOC_USER_AGENT: ${{ secrets.LOC_USER_AGENT }}
+        run: python3 scripts/check_halifax_source.py
