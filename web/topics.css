@@ -1,0 +1,12 @@
+:root { color-scheme: dark; font-family: system-ui,sans-serif; background:#102027; color:#faf2e4; line-height:1.6; }
+* { box-sizing:border-box; }
+main { max-width:52rem; margin:auto; padding:clamp(1rem,4vw,3rem); }
+nav { margin-bottom:2rem; }
+a { color:#f1c779; overflow-wrap:anywhere; text-underline-offset:.18em; }
+h1,h2 { line-height:1.12; font-family:Georgia,serif; }
+h1 { font-size:clamp(2.25rem,5vw,3.7rem); margin:1rem 0; }
+h2 { margin-top:2rem; }
+.action { display:inline-block; border:1px solid #d6b175; border-radius:.35rem; padding:.5rem .85rem; }
+ol { padding-left:1.5rem; }
+ol li { padding:.7rem .25rem; border-top:1px solid #405259; }
+ol span { display:block; color:#c5d2d2; font-size:.9em; }
