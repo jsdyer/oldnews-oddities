@@ -37,6 +37,7 @@ jobs:
       - name: Refresh configured newspaper shelves
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         env:
+          LOC_USER_AGENT: ${{ secrets.LOC_USER_AGENT }}
           FORCE_REFRESH: ${{ github.event_name == 'schedule' || inputs.refresh_data }}
         run: |
           if [ "$FORCE_REFRESH" = "true" ]; then

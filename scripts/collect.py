@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 import time
 from urllib.parse import urlencode, urlsplit
-from urllib.request import Request, urlopen
+from loc_http import read_loc
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://www.loc.gov/collections/chronicling-america/'
 
@@ -72,10 +72,7 @@ def collect(root=ROOT, if_changed=False):
     for i,t in enumerate(config['topics']):
         if i: time.sleep(max(4,config.get('minimumRequestIntervalSeconds',4)))
         url=source_url(t,config['pageSize']); print('Collecting '+t['id'],flush=True)
-        req=Request(url,headers={'User-Agent':'CoolCode OldNewsOddities/1.0 (https://coolcode.ca/oldnews-oddities/)','Accept':'application/json'})
-        with urlopen(req,timeout=config['requestTimeoutSeconds']) as response:
-            raw=response.read(12_000_001)
-        if len(raw)>12_000_000: raise ValueError('Response exceeded collection limit')
+        raw=read_loc(url,timeout=config['requestTimeoutSeconds'],limit=12_000_000,default_agent='CoolCode OldNewsOddities/1.0 (+https://coolcode.ca/oldnews-oddities/)')
         records,total=normalize_response(json.loads(raw))
         topics.append({'id':t['id'],'query':t['query'],'operator':t['operator'],'fromYear':t['fromYear'],'toYear':t['toYear'],'total':total,'records':records,'sourceUrl':url,'sourceSha256':hashlib.sha256(raw).hexdigest()})
         print(f'  {len(records)} pages; {total} search matches',flush=True)

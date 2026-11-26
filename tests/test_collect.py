@@ -34,3 +34,13 @@ class CollectorTests(unittest.TestCase):
         for t in shelf['topics']:
             self.assertEqual(len(t['sourceSha256']),64)
             self.assertTrue(t['records'])
+
+    def test_failed_refresh_retains_previous_shelf(self):
+        import tempfile
+        from unittest.mock import patch
+        from collect import collect
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary);(root/'web/data').mkdir(parents=True);(root/'web/config.json').write_text(json.dumps(self.config));out=root/'web/data/shelf.json';out.write_text('{"old":"capture"}');before=out.read_bytes()
+            with patch('collect.read_loc',side_effect=RuntimeError('LOC request failed')):
+                with self.assertRaises(RuntimeError):collect(root)
+            self.assertEqual(out.read_bytes(),before)

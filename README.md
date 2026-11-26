@@ -138,7 +138,7 @@ Chronicling America and the original newspaper.
 ## Development and deployment
 
 Source is in `web/`, collector/build scripts in `scripts/`, tests in `tests/`.
-No production dependencies or secrets. Node and Python use their standard
+No production dependencies. An optional private collector header is configured as described below. Node and Python use their standard
 libraries. CI adds test-only Playwright to check the app at a repository subpath.
 Successful main builds publish GitHub Pages. Preserve relative paths and do not
 add a CNAME. The CoolCode catalogue owns the shared domain and tool registration.
@@ -150,3 +150,11 @@ Public GitHub repositories can have scheduled workflows disabled after 60 days o
 
 The separate schedule guard remains a mitigation, not a scheduling guarantee. The independent [CoolCode refresh watchdog](https://github.com/jsdyer/jsdyer.github.io/blob/main/services/refresh-watchdog/README.md) is maintained in GitHub and uses the generated workflow and freshness registry; do not maintain another target list here. Using it requires installation on a Linux server and GitHub credentials with access to this repository. A generated target does not prove that a private server has adopted it; verify the installed service's report. The guard does not collect data, create dummy commits or change source/check timestamps. Successful collection and published data freshness still need monitoring.
 <!-- /schedule-reliability -->
+
+## Optional Library of Congress exemption header
+
+If the Library has issued an access-exemption User-Agent, add an **Actions repository secret** named `LOC_USER_AGENT` under **Settings → Secrets and variables → Actions → New repository secret**. The value is the exact one-line value supplied by the Library: email, one space, then the supplied token. Do not include `LOC_USER_AGENT=`, `User-Agent:`, quotes, a JSON object or a newline. Never put the value in `web/`, `config.json`, a commit, an Actions variable or a browser request.
+
+The workflow passes this secret only to `scripts/collect.py`. `scripts/loc_http.py` sends it only to HTTPS `loc.gov` or `www.loc.gov` on the normal HTTPS port. All redirects are rejected before any private header is forwarded. Network errors use sanitized messages; raw response bodies and headers are not logged. A response echoing the header or token is discarded before it could become a published capture. Without this optional secret, the collector uses its ordinary public User-Agent; it may still encounter the provider's verification challenge.
+
+After adding the secret, manually run the existing Pages workflow with **Refresh saved searches** (Headline Vault) or **Refresh all configured discovery shelves** (Old News Oddities) enabled. A normal code push remains an offline/config-change build and does not prove private-header collection succeeded. The existing request intervals and atomic last-good-capture behavior remain in force. This exemption affects server-side collection only; the private value is never shared with visitors, so browser live searches can still face provider access checks. No Cloudflare or VPS change is required.
