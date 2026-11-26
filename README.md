@@ -12,7 +12,7 @@ Choose a topic, reuse a retained Headline Vault newspaper search, or search your
 
 The first shelf is a real retained LoC query for **mysterious airship**. Other
 editable shelves explore perpetual motion, wireless telegraphy and sea serpents.
-Choose **Follow your own curiosity**, enter any phrase and dates, then submit to
+In **Search historic newspaper pages**, enter any phrase and dates, then submit to
 search the public collection. Search modes are exact phrase, all words and any
 word. **Load the next page** continues that query; **Filter these pages** only
 filters the pages already loaded. **Surprise me** randomly selects a loaded page,
@@ -20,9 +20,7 @@ not a random item from the entire collection. No registration or API key require
 
 Save any page to the tab's clippings list, even across searches. Export a JSON
 research receipt or CSV source list. Nothing is automatically persisted across
-browser sessions. Images and explicit searches contact the Library of Congress.
-No query or saved page is sent to CoolCode; the shared aggregate counter records
-the tool ID only.
+browser sessions. Images load from the Library of Congress. When you submit a search, CoolCode forwards its terms and filters to the Library. Matching searches share a cached result for up to one hour. Saved clippings stay local. The aggregate counter receives the tool ID.
 
 ## Shared newspaper collection
 
@@ -99,11 +97,7 @@ is the loc.gov JSON API; the legacy API was retired in 2025.
 state 20 JSON requests per minute; the app submits only explicit searches with
 at least four seconds between starts and no automatic retry storm. API requests
 can be slow or blocked during heavy load. The Library explicitly warns that even
-requests below its limit may receive HTTP 429 or HTML verification pages. Browser
-cross-site access and network failures can also hide the underlying response;
-“Failed to fetch” alone cannot distinguish them. A successful test in one browser
-does not guarantee access from every visitor's browser. The app never retries
-failures automatically and preserves previous results and clippings.
+requests below its limit may receive HTTP 429 or HTML verification pages. CoolCode shares request pacing across both newspaper tools. Earlier results and clippings remain available when a request fails.
 
 Live requests use the documented `at=results,pagination` projection to avoid
 unneeded response fields. This reduces payload size; it does not remove upstream
@@ -157,4 +151,4 @@ If the Library has issued an access-exemption User-Agent, add an **Actions repos
 
 The workflow passes this secret only to `scripts/collect.py`. `scripts/loc_http.py` sends it only to HTTPS `loc.gov` or `www.loc.gov` on the normal HTTPS port. All redirects are rejected before any private header is forwarded. Network errors use sanitized messages; raw response bodies and headers are not logged. A response echoing the header or token is discarded before it could become a published capture. Without this optional secret, the collector uses its ordinary public User-Agent; it may still encounter the provider's verification challenge.
 
-After adding the secret, manually run the existing Pages workflow with **Refresh saved searches** (Headline Vault) or **Refresh all configured discovery shelves** (Old News Oddities) enabled. A normal code push remains an offline/config-change build and does not prove private-header collection succeeded. The existing request intervals and atomic last-good-capture behavior remain in force. This exemption affects server-side collection only; the private value is never shared with visitors, so browser live searches can still face provider access checks. No Cloudflare or VPS change is required.
+After adding the secret, manually run the existing Pages workflow with **Refresh saved searches** (Headline Vault) or **Refresh all configured discovery shelves** (Old News Oddities) enabled. A normal code push remains an offline/config-change build and does not prove private-header collection succeeded. The existing request intervals and atomic last-good-capture behavior remain in force. For interactive searches, add the same one-line value as an encrypted Cloudflare Worker secret named `LOC_USER_AGENT` on `coolcode-visitor-api`. Deploy the Worker with its `/api/newspapers/search` route. The app sends search parameters to CoolCode. The Worker attaches the issued header to the fixed Chronicling America HTTPS endpoint, rejects redirects, and shares cached results for an hour. Original-source links and downloaded citations continue to point to the Library.

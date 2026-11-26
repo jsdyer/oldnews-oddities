@@ -47,8 +47,8 @@ def main():
                 assert page.locator("#exportJSON").is_disabled()
                 captured = json.loads((ROOT / "web/data/shelf.json").read_text())["topics"][0]["records"][0]
                 mock = {"results": [{"page_id": captured["id"], "url": captured["url"], "date": captured["date"], "title": captured["title"], "image_url": [], "description": [], "location_city": [captured["city"]], "location_state": [captured["state"]]}], "pagination": {"of": 1, "total": 1}}
-                page.route("https://www.loc.gov/collections/chronicling-america/**", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps(mock)))
-                page.get_by_text("Follow your own curiosity", exact=True).click()
+                page.route("https://coolcode-visitor-api.jeffdyer.workers.dev/api/newspapers/search**", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps({"fetched_at":"2026-11-25T12:00:00Z","data":mock})))
+                assert page.locator("#query").is_visible()
                 page.locator("#query").fill("mechanical man")
                 page.locator("#searchSubmit").click()
                 page.wait_for_function("document.getElementById('status').textContent.includes('Live search complete')")
@@ -57,8 +57,8 @@ def main():
                 # A failed custom search preserves the live page and existing clippings.
                 page.locator(".save").first.click()
                 page.wait_for_timeout(4100)
-                page.unroute("https://www.loc.gov/collections/chronicling-america/**")
-                page.route("https://www.loc.gov/collections/chronicling-america/**", lambda route: route.fulfill(status=200, content_type="text/html", body="<html>verification required</html>"))
+                page.unroute("https://coolcode-visitor-api.jeffdyer.workers.dev/api/newspapers/search**")
+                page.route("https://coolcode-visitor-api.jeffdyer.workers.dev/api/newspapers/search**", lambda route: route.fulfill(status=200, content_type="text/html", body="<html>verification required</html>"))
                 page.locator("#query").fill("Halifax")
                 page.locator("#searchSubmit").click()
                 page.wait_for_function("document.getElementById('status').textContent.includes('web page instead of JSON')")
